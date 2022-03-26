@@ -1,0 +1,46 @@
+{
+    "header" : {
+        "versiboth" : 1
+    },
+    "eventName" : "event:>Engine>default",
+    "samples" : 
+    [
+        [
+            ["art/sound/engine/fm7/coupe/engine/both/1_Engb_00803.wav", 1060],
+            ["art/sound/engine/fm7/coupe/engine/both/2_EngB_01079.wav", 1740],
+            ["art/sound/engine/fm7/coupe/engine/both/3_EngB_01349.wav", 2223],
+            ["art/sound/engine/fm7/coupe/engine/both/4_EngB_01620.wav", 2829],
+            ["art/sound/engine/fm7/coupe/engine/both/5_EngB_01890.wav", 3203],
+            ["art/sound/engine/fm7/coupe/engine/both/6_EngB_02158.wav", 3820],
+            ["art/sound/engine/fm7/coupe/engine/both/7_EngB_02428.wav", 4508],
+            ["art/sound/engine/fm7/coupe/engine/both/8_EngB_02698.wav", 4665],
+            ["art/sound/engine/fm7/coupe/engine/both/9_EngB_03240.wav", 5548],
+            ["art/sound/engine/fm7/coupe/engine/both/10_EngB_03777.wav", 6013],
+            ["art/sound/engine/fm7/coupe/engine/both/11_EngB_04320.wav", 6200],
+            ["art/sound/engine/fm7/coupe/engine/both/12_EngB_04858.wav", 6500],
+            ["art/sound/engine/fm7/coupe/engine/both/13_EngB_05396.wav", 6900],
+            ["art/sound/engine/fm7/coupe/engine/both/14_EngB_05936.wav", 7200],
+            ["art/sound/engine/fm7/coupe/engine/both/15_EngB_06589.wav", 7500]
+            
+        ],
+        [
+
+            ["art/sound/engine/fm7/coupe/engine/both/1_Engb_00803.wav", 1060],
+            ["art/sound/engine/fm7/coupe/engine/both/2_EngB_01079.wav", 1740],
+            ["art/sound/engine/fm7/coupe/engine/both/3_EngB_01349.wav", 2223],
+            ["art/sound/engine/fm7/coupe/engine/both/4_EngB_01620.wav", 2829],
+            ["art/sound/engine/fm7/coupe/engine/both/5_EngB_01890.wav", 3203],
+            ["art/sound/engine/fm7/coupe/engine/both/6_EngB_02158.wav", 3820],
+            ["art/sound/engine/fm7/coupe/engine/both/7_EngB_02428.wav", 4508],
+            ["art/sound/engine/fm7/coupe/engine/both/8_EngB_02698.wav", 4665],
+            ["art/sound/engine/fm7/coupe/engine/both/9_EngB_03240.wav", 5548],
+            ["art/sound/engine/fm7/coupe/engine/both/10_EngB_03777.wav", 6013],
+            ["art/sound/engine/fm7/coupe/engine/both/11_EngB_04320.wav", 6200],
+            ["art/sound/engine/fm7/coupe/engine/both/12_EngB_04858.wav", 6500],
+            ["art/sound/engine/fm7/coupe/engine/both/13_EngB_05396.wav", 6900],
+            ["art/sound/engine/fm7/coupe/engine/both/14_EngB_05936.wav", 7200],
+            ["art/sound/engine/fm7/coupe/engine/both/15_EngB_06589.wav", 7500]
+            
+        ]
+    ]
+}
