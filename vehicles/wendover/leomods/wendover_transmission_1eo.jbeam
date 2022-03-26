@@ -1,0 +1,198 @@
+{
+"wendover_transmission_6M_race_1eo": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Race 6-Speed Manual Transmission 1eo",
+        "value":2650,
+    },
+    "slotType" : "wendover_transmission",
+    "slots": [
+        ["type", "default", "description"],
+        ["wendover_flywheel","wendover_flywheel_race","Flywheel", {"coreSlot":true}],
+        ["wendover_transfer_case","wendover_transfer_case_FWD", "Transfer Case", {"nodeMove":{"x":0.00,"y":0.0,"z":0}}],
+        ["wendover_differential_F","wendover_differential_F", "Front Differential", {"nodeMove":{"x":0.00,"y":0.0,"z":0}}],
+    ],
+    "variables": [
+        ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+        ["$gear_R", "range", ":1", "Transmission", 3.25, 0.5, 5, "Reverse Gear Ratio", "Torque multiplication ratio", {"stepDis":0.01}],
+        ["$gear_1", "range", ":1", "Transmission", 3.64, 0.5, 5, "1st Gear Ratio",     "Torque multiplication ratio", {"stepDis":0.01}],
+        ["$gear_2", "range", ":1", "Transmission", 2.38, 0.5, 5, "2nd Gear Ratio",     "Torque multiplication ratio", {"stepDis":0.01}],
+        ["$gear_3", "range", ":1", "Transmission", 1.76, 0.5, 5, "3rd Gear Ratio",     "Torque multiplication ratio", {"stepDis":0.01}],
+        ["$gear_4", "range", ":1", "Transmission", 1.35, 0.5, 5, "4th Gear Ratio",     "Torque multiplication ratio", {"stepDis":0.01}],
+        ["$gear_5", "range", ":1", "Transmission", 1.06, 0.5, 5, "5th Gear Ratio",     "Torque multiplication ratio", {"stepDis":0.01}],
+        ["$gear_6", "range", ":1", "Transmission", 0.84, 0.5, 5, "6th Gear Ratio",     "Torque multiplication ratio", {"stepDis":0.01}],
+    ],
+    "powertrain": [
+        ["type", "name", "inputName", "inputIndex"],
+        ["frictionClutch", "clutch", "mainEngine", 1],
+        ["manualGearbox", "gearbox", "clutch", 1],
+    ],
+    "gearbox": {
+        "uiName":"Gearbox",
+        "gearRatios":["$=-$gear_R", 0, "$gear_1", "$gear_2", "$gear_3", "$gear_4", "$gear_5", "$gear_6"],
+        "friction":1.52,
+        "dynamicFriction":0.0015,
+        "torqueLossCoef": 0.0135,
+        "gearboxNode:":["tra1l"],
+
+        "gearWhineCoefsInput":  [0.64, 0.00, 0.60, 0.55, 0.45, 0.45, 0.45, 0.45],
+        "gearWhineCoefsOutput": [0.00, 0.00, 0.60, 0.60, 0.60, 0.60, 0.60, 0.60],
+        "gearWhineInputEvent": "event:>Vehicle>Transmission>straight_01>twine_in_race",
+        "gearWhineOutputEvent": "event:>Vehicle>Transmission>straight_01>twine_out_race",
+
+        //"forwardInputPitchCoef":1
+        //"forwardOutputPitchCoef":1
+        //"reverseInputPitchCoef":0.7
+        //"reverseOutputPitchCoef":0.7
+
+        //"gearWhineInputPitchCoefSmoothing":50
+        //"gearWhineOutputPitchCoefSmoothing":50
+        //"gearWhineInputVolumeCoefSmoothing":10
+        //"gearWhineOutputVolumeCoefSmoothing":10
+
+        //"gearWhineFixedCoefOutput": 0.7
+        //"gearWhineFixedCoefInput": 0.4
+    },
+    "vehicleController": {
+        "transmissionShiftDelay":0.13,
+        "calculateOptimalLoadShiftPoints": true,
+        "shiftDownRPMOffsetCoef":1.17,
+        //"aggressionSmoothingDown":0.05
+        "aggressionHoldOffThrottleDelay":3,
+        //"lowShiftDownRPM":[0,0,0,1600,1900,1800,1600,1500],
+        //"lowShiftUpRPM":[0,0,3500,3300,3150,3000,2900],
+        "lowShiftDownRPM":[0,0,0,2000,2600,2600,2600,2600],
+        "lowShiftUpRPM":[0,0,4200,4200,4050,3850,3700],
+        //"wheelSlipUpThreshold":100,
+        "clutchLaunchStartRPM":3000,
+        "clutchLaunchTargetRPM":3000,
+    },
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["wendover_tranmission_1eo", ["wendover_engine","wendover_transmission"]],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--5 Speed Manual--
+         {"selfCollision":false},
+         {"collision":true},
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"group":"wendover_transmission"},
+         {"nodeWeight":9},
+         ["tra1r", -0.22, -1.37, 0.325],
+         ["tra1l", 0.3, -1.37, 0.325],
+         {"group":""},
+         //transmission mount node
+         ["em1l", 0.46, -1.62, 0.535, {"nodeWeight":3}],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--TRANSMISSION CONE--
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":8400600,"beamDamp":150},
+          {"beamDeform":540000,"beamStrength":"FLT_MAX"},
+          ["tra1l", "e1r"],
+          ["tra1l", "e3l"],
+          ["tra1l", "e1l"],
+          ["tra1l", "e3r"],
+          ["tra1r", "e2r"],
+          ["tra1r", "e4l"],
+          ["tra1r", "e1r"],
+          ["tra1r", "e3l"],
+          ["tra1r", "e2l"],
+          ["tra1r", "e4r"],
+          ["tra1r", "tra1l"],
+
+          //transmission mount node
+          {"beamSpring":4400000,"beamDamp":150},
+          {"beamDeform":90000,"beamStrength":"FLT_MAX"},
+          ["em1l","e3l"],
+          ["em1l","e3r"],
+          ["em1l","e4l"],
+          ["em1l","e4r"],
+          ["em1l", "e1r"],
+          ["em1l", "e1l"],
+          ["em1l", "e2l"],
+          ["em1l", "e2r"],
+          ["em1l", "tra1l"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"wendover_flywheel": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Flywheel",
+        "value":150,
+    },
+    "slotType" : "wendover_flywheel",
+    "clutch": {
+        "uiName":"Clutch",
+        "additionalEngineInertia":0.11,
+        "clutchMass":5,
+    },
+},
+"wendover_flywheel_race": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Ultra Light Flywheel",
+        "value":400,
+    },
+    "slotType" : "wendover_flywheel",
+    "clutch": {
+        "uiName":"Clutch",
+        "additionalEngineInertia":0.02,
+        "clutchMass":3.75,
+    },
+},
+"wendover_flywheel_light": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Lightened Flywheel",
+        "value":200,
+    },
+    "slotType" : "wendover_flywheel",
+    "clutch": {
+        "uiName":"Clutch",
+        "additionalEngineInertia":0.06,
+        "clutchMass":4.25,
+    },
+},
+"wendover_converter_locking": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Locking Torque Converter",
+        "value":150,
+    },
+    "slotType" : "wendover_converter",
+    "torqueConverter": {
+        "uiName":"Torque Converter",
+        "converterDiameter": 0.258,
+        "converterStiffness":9,
+        "couplingAVRatio":0.9,
+        "stallTorqueRatio":1.8,
+        "lockupClutchTorque":250,
+        "additionalEngineInertia":0.16,
+    },
+    "vehicleController": {
+        "torqueConverterLockupRPM":1100,
+        "torqueConverterLockupMinGear":3,
+    },
+},
+"wendover_converter": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Torque Converter",
+        "value":150,
+    },
+    "slotType" : "wendover_converter",
+    "torqueConverter": {
+        "uiName":"Torque Converter",
+        "converterDiameter": 0.254,
+        "converterStiffness":8.5,
+        "couplingAVRatio":0.89,
+        "stallTorqueRatio":1.85,
+        "additionalEngineInertia":0.14,
+    },
+},
+}

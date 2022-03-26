@@ -1,0 +1,92 @@
+{
+"legran_steering_drift_cut": {
+    "information":{
+        "authors":"BeamNG, Olrosse",
+        "name":"Quick Ratio Drift Steering With Cut Knucles and moved rack",
+        "value":600,
+    },
+    "slotType" : "legran_steering",
+    "slots": [
+        ["type", "default", "description"],
+        ["legran_power_steering","", "Power Steering"],
+    ],
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["legran_tierod_F", ["legran_tierod_F","legran_hub_F"]],
+         ["legran_steeringbox", ["legran_subframe_F"]],
+    ],
+    "rails": {"steeringrack":{"links:":["fh6r", "fh6l"], "broken:":[], "looped":false, "capped":true},
+    },
+    "slidenodes": [
+        ["id:", "railName", "attached", "fixToRail", "tolerance", "spring", "strength", "capStrength"],
+        ["fx5r", "steeringrack", true, true, 0.0, 14001000, "FLT_MAX", "FLT_MAX"],
+        ["fx5l", "steeringrack", true, true, 0.0, 14001000, "FLT_MAX", "FLT_MAX"],
+    ],
+    "variables": [
+        ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+        ["$toe_FR", "range", "", "Wheel Alignment", 1.001, 0.98, 1.02, "Toe Adjust", "Adjusts the wheel toe-in angle", {"subCategory":"Front"}],
+        ["$steer_center_F", "range", "", "Wheel Alignment", 0, -0.002, 0.002, "Toe Left/Right Trim", "Fine tunes the centerpoint of the steering", {"subCategory":"Front"}]
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--steering rod--
+         {"selfCollision":false},
+         {"collision":true},
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"group":"legran_tierod_F"},
+         {"nodeWeight":5},
+         ["fh6r", -0.35, -1.24, 0.26],
+         ["fh6l", 0.35, -1.24, 0.26],
+         {"nodeWeight":6.0},
+         {"selfCollision":false},
+         //steering box/tie rod end
+         ["fx5r", -0.25, -1.24, 0.26, {"group":["legran_swaybar_F","legran_steeringbox"]}],
+         ["fx5l",  0.25, -1.24, 0.26, {"group":["legran_swaybar_F","legran_steeringbox"]}],
+         //tie rod end
+         {"nodeWeight":5.5},
+         {"group":["legran_tierod_F","legran_hub_F"]},
+         ["fh3r",-0.665, -1.23, 0.268],
+         ["fh3l", 0.665, -1.23, 0.268],
+        {"group":""},
+    ],
+    "beams": [
+          ["id1:","id2:"],
+          {"beamPrecompression":1.0, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+          {"beamSpring":10001000,"beamDamp":100,"beamDeform":44550,"beamStrength":83250},
+          ["fh6r","fh6l"],
+          {"beamSpring":17001000,"beamDamp":100},
+          ["fh3r","fh6r", {"beamPrecompression":"$=$toe_FR-$steer_center_F","beamPrecompressionTime":0.5}],
+          ["fh3l","fh6l", {"beamPrecompression":"$=$toe_FR+$steer_center_F","beamPrecompressionTime":0.5}],
+          //steering damper
+          {"beamPrecompression":1.0, "beamType":"|BOUNDED", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":0,"beamDeform":15120,"beamStrength":37800},
+          {"beamLimitSpring":0,"beamLimitDamp":0},
+          {"beamDamp":100},
+          ["fh3r","fx1r", {"beamDampVelocitySplit":0.1,"beamDampFast":1000,"dampCutoffHz":750}],
+          ["fh3l","fx1l", {"beamDampVelocitySplit":0.1,"beamDampFast":1000,"dampCutoffHz":750}],
+          ["fh5r","fx2r", {"beamDampVelocitySplit":0.1,"beamDampFast":1000,"dampCutoffHz":750}],
+          ["fh5l","fx2l", {"beamDampVelocitySplit":0.1,"beamDampFast":1000,"dampCutoffHz":750}],
+          {"beamPrecompression":1.0, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+    ],
+    "triangles": [
+          ["id1:","id2:","id3:"],
+          {"triangleType":"NONCOLLIDABLE"},
+          {"dragCoef":0},
+          ["fx2r", "fh6r", "fx2l"],
+          ["fx2r", "fh6l", "fx2l"],
+          {"triangleType":"NORMALTYPE"},
+    ],
+    "hydros": [
+        ["id1:","id2:"],
+        {"beamPrecompression":1.0, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+        {"beamSpring":8001000,"beamDamp":50,"beamDeform":"FLT_MAX","beamStrength":83250},
+        ["fh6r","fx5l", {"factor":-0.16,"steeringWheelLock":450, "inRate":1.25,"outRate":1.25}],
+        ["fh6l","fx5r", {"factor":0.16,"steeringWheelLock":450, "inRate":1.25,"outRate":1.25}],
+        {"beamPrecompression":1.0, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+    ],
+    "input": {
+        "FFBcoef":"$=$ffbstrength*10.5",
+    },
+},
+}

@@ -1,0 +1,15 @@
+{
+"spyro_wheel": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Spyro Wheel",
+        "value":440,
+    },
+    "slotType" : "etkc_steer",
+    "props": [
+        ["func",     "mesh",        "idRef:", "idX:", "idY:", "baseRotation",            "rotation",            "translation",         "min", "max", "offset", "multiplier"],
+        //steering wheel
+        ["steering", "swr_jj02",   "f1l","f1r","f6l",        {"x":-76, "y":0, "z":180}, {"x":0, "y":0, "z":1}, {"x":0, "y":0, "z":0}, -1000, 1000, 0, 1, {"baseTranslation":{"x":-0.079,"y":0.59,"z":-0.56}}],
+     ],
+},
+}

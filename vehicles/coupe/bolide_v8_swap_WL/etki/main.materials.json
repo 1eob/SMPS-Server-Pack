@@ -1,0 +1,748 @@
+{
+  "etki" : {
+    "name" : "etki",
+    "mapTo" : "etki_old",
+    "class" : "Material",
+    "persistentId" : "88c0744b-8bea-4541-829a-54f8d9a8cac8",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/common/null.dds",
+        "normalMap" : "vehicles/etki/etki_n.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/common/null.dds",
+        "specularPower" : 128,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/etki/etki_d.dds",
+        "normalMap" : "vehicles/etki/etki_n.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/etki/etki_s.dds",
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/etki/etki_c.dds",
+        "instanceDiffuse" : true,
+        "normalMap" : "vehicles/etki/etki_n.png",
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/etki/etki_s.dds",
+        "specularPower" : 10,
+        "useAnisotropic" : true
+      },
+      {}
+    ],
+    "alphaRef" : 0,
+    "dynamicCubemap" : true,
+    
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle",
+    "translucent" : true,
+    "translucentBlendOp" : "None"
+  },
+  "etki_main" : {
+    "name" : "etki_main",
+    "mapTo" : "etki",
+    "class" : "Material",
+    "persistentId" : "88c0744b-8bea-4541-829a-54f8d9a8cac8",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/etki/etki_main_ao.data.png",
+        "baseColorMap": "/vehicles/etki/etki_main_b.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/etki/etki_main_m.data.png",
+        "normalMap": "vehicles/etki/etki_main_n.normal.png",
+        "roughnessMap": "/vehicles/etki/etki_main_r.data.png",
+        "useAnisotropic": true
+      },
+      {
+        "ambientOcclusionMap": "/vehicles/etki/etki_main_ao.data.png",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/etki/etki_main_cc.data.png",
+        "clearCoatRoughnessFactor": 1,
+        "colorPaletteMap": "/vehicles/etki/etki_main_p.color.png",
+        "colorPaletteMapUseUV": 1,
+        "instanceDiffuse": true,
+        "metallicFactor": 1,
+        "normalMap": "vehicles/etki/etki_main_n.normal.png",
+        "opacityMap": "/vehicles/etki/etki_main_c.data.png",
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "activeLayers": 2,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 0,
+    "version": 1.5
+  },
+  "etki_boost_1" : {
+    "name" : "etki_boost_1",
+    "class" : "Material",
+    "persistentId" : "95f1277a-4f9b-4dfc-827b-b38db92d7968",
+    "Stages" : [ {}, {}, {}, {} ],
+    "mapTo" : "etki_boost_1"
+  },
+  "etki_boost_10" : {
+    "name" : "etki_boost_10",
+    "class" : "Material",
+    "persistentId" : "e15a677c-3e9c-44d8-9571-da17a87c3cab",
+    "Stages" : [ {}, {}, {}, {} ],
+    "mapTo" : "etki_boost_10"
+  },
+  "etki_boost_11" : {
+    "name" : "etki_boost_11",
+    "class" : "Material",
+    "persistentId" : "fa8c1335-668e-4c0f-809a-fed2938cffdc",
+    "Stages" : [ {}, {}, {}, {} ],
+    "mapTo" : "etki_boost_11"
+  },
+  "etki_boost_2" : {
+    "name" : "etki_boost_2",
+    "class" : "Material",
+    "persistentId" : "c4166c6e-332e-43b6-8087-4e6e01aa6647",
+    "Stages" : [ {}, {}, {}, {} ],
+    "mapTo" : "etki_boost_2"
+  },
+  "etki_boost_3" : {
+    "name" : "etki_boost_3",
+    "class" : "Material",
+    "persistentId" : "1f876504-d468-4204-95df-4802729653fa",
+    "Stages" : [ {}, {}, {}, {} ],
+    "mapTo" : "etki_boost_3"
+  },
+  "etki_boost_4" : {
+    "name" : "etki_boost_4",
+    "class" : "Material",
+    "persistentId" : "fc171a13-6d92-443c-b28a-eaac4de3672e",
+    "Stages" : [ {}, {}, {}, {} ],
+    "mapTo" : "etki_boost_4"
+  },
+  "etki_boost_5" : {
+    "name" : "etki_boost_5",
+    "class" : "Material",
+    "persistentId" : "ca6a15a6-9b31-408c-bc6d-46cf808f8ef1",
+    "Stages" : [ {}, {}, {}, {} ],
+    "mapTo" : "etki_boost_5"
+  },
+  "etki_boost_6" : {
+    "name" : "etki_boost_6",
+    "class" : "Material",
+    "persistentId" : "65736282-dd45-442c-ad75-2fb3cf6ba894",
+    "Stages" : [ {}, {}, {}, {} ],
+    "mapTo" : "etki_boost_6"
+  },
+  "etki_boost_7" : {
+    "name" : "etki_boost_7",
+    "class" : "Material",
+    "persistentId" : "34e137f4-9bba-4e11-896b-014f39d10b20",
+    "Stages" : [ {}, {}, {}, {} ],
+    "mapTo" : "etki_boost_7"
+  },
+  "etki_boost_8" : {
+    "name" : "etki_boost_8",
+    "class" : "Material",
+    "persistentId" : "b4c28f78-d50a-44f8-bfb6-9de7eeb74aee",
+    "Stages" : [ {}, {}, {}, {} ],
+    "mapTo" : "etki_boost_8"
+  },
+  "etki_boost_9" : {
+    "name" : "etki_boost_9",
+    "class" : "Material",
+    "persistentId" : "3f42159b-45bb-4fe1-a7bc-061b891533b4",
+    "Stages" : [ {}, {}, {}, {} ],
+    "mapTo" : "etki_boost_9"
+  },
+  "etki_brakelight" : {
+    "name" : "etki_brakelight",
+    "class" : "Material",
+    "persistentId" : "ee39671e-bc91-47a8-bbed-3c318c0fdc84",
+    "Stages" : [ {}, {}, {}, {} ],
+    "mapTo" : "etki_brakelight"
+  },
+  "etki_chmsl" : {
+    "name" : "etki_chmsl",
+    "class" : "Material",
+    "persistentId" : "7b42fc3d-23e4-4d02-a19f-543b458b3df0",
+    "Stages" : [ {}, {}, {}, {} ],
+    "mapTo" : "etki_chmsl"
+  },
+  "etki_engine" : {
+    "name" : "etki_engine",
+    "class" : "Material",
+    "persistentId" : "0cf311c9-d14d-4adb-a20c-ff117ba2b629",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/common/null.dds",
+        "normalMap" : "vehicles/etki/etki_engine_n.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/common/null.dds",
+        "specularPower" : 128,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/etki/etki_engine_d.dds",
+        "normalMap" : "vehicles/etki/etki_engine_n.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/etki/etki_engine_s.dds",
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {},
+      {}
+    ],
+    "alphaRef" : 0,
+    "dynamicCubemap" : true,
+    "mapTo" : "etki_engine",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle",
+    "translucent" : true,
+    "translucentBlendOp" : "None"
+  },
+  "etki_foglight" : {
+    "name" : "etki_foglight",
+    "class" : "Material",
+    "persistentId" : "be778f9f-e311-4dd6-93fa-588fdf241d56",
+    "Stages" : [ {}, {}, {}, {} ],
+    "mapTo" : "etki_foglight"
+  },
+  "etki_gauges" : {
+    "name" : "etki_gauges",
+    "class" : "Material",
+    "persistentId" : "cd133e50-538e-4205-b090-1f8296950517",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/etki/etki_gauges_d.dds",
+        "diffuseColor" : [ 0, 0, 0, 1 ],
+        "normalMap" : "vehicles/etki/etki_gauges_n.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/etki/etki_gauges_s.dds",
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {},
+      {},
+      {}
+    ],
+    "mapTo" : "etki_gauges",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle"
+  },
+  "etki_gauges_on" : {
+    "name" : "etki_gauges_on",
+    "class" : "Material",
+    "persistentId" : "45b9c313-fcba-470e-b343-764f2c071f1c",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/etki/etki_gauges_d.dds",
+        "diffuseColor" : [ 0, 0, 0, 1 ],
+        "normalMap" : "vehicles/etki/etki_gauges_n.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/etki/etki_gauges_s.dds",
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/etki/etki_gauges_g.dds",
+        "diffuseColor" : [ 0, 0, 0, 0 ],
+        "emissive" : true,
+        "normalMap" : "vehicles/etki/etki_gauges_n.dds",
+        "specularMap" : "vehicles/etki/etki_gauges_s.dds",
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {},
+      {}
+    ],
+    "mapTo" : "etki_gauges_on",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle"
+  },
+  "etki_gearindicator" : {
+    "name" : "etki_gearindicator",
+    "class" : "Material",
+    "persistentId" : "f71d7da1-8519-4467-a676-34acf3c1aa8d",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/etki/etki_gauges_d_ttsport.dds",
+        "pixelSpecular" : true,
+        "specularPower" : 128
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef" : 0,
+    "castShadows" : false,
+    "mapTo" : "etki_gearindicator",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle",
+    "materialTag2" : "decal",
+    "translucent" : true,
+    "translucentZWrite" : true
+  },
+  "etki_glass" : {
+    "name" : "etki_glass",
+    "mapTo" : "etki_glass",
+    "class" : "Material",
+    "persistentId" : "5b0a0081-7928-4b13-a20b-9781f2b8d1bf",
+    "Stages": [
+      {
+        "baseColorMap": "vehicles/etki/etki_glass_b.color.png",
+        "normalMap": "/vehicles/etki/etki_glass_n.normal.png",
+        "opacityMap": "/vehicles/etki/etki_glass_o.data.png",
+        "pixelSpecular": true,
+        "roughnessFactor": 0,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "castShadows": false,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 1852795252,
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "translucentRecvShadows": true,
+    "version": 1.5
+  },
+  "etki_glass_dmg" : {
+    "name" : "etki_glass_dmg",
+    "mapTo" : "etki_glass_dmg",
+    "class" : "Material",
+    "persistentId" : "a1b15136-063b-4def-8910-880255ccaa15",
+    "Stages": [
+      {
+        "baseColorMap": "vehicles/etki/etki_glass_dmg_b.color.png",
+        "normalMap": "vehicles/common/glass_dmg_n.dds",
+        "opacityMap": "/vehicles/etki/etki_glass_dmg_o.data.png",
+        "pixelSpecular": true,
+        "roughnessFactor": 0,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 20,
+    "alphaTest": true,
+    "castShadows": false,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 1852795252,
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "translucentRecvShadows": true,
+    "version": 1.5
+  },
+  "etki_glass_int" : {
+    "name" : "etki_glass_int",
+    "class" : "Material",
+    "persistentId" : "311be216-7092-4201-a501-f9540b6579e0",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/etki/etki_glass_d.dds",
+        "diffuseColor" : [ 0, 0, 0, 1 ],
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/common/null.dds",
+        "specularPower" : 128,
+        "useAnisotropic" : true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef" : 0,
+    "castShadows" : false,
+    "mapTo" : "etki_glass_int",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle",
+    "translucent" : true
+  },
+  "etki_headlight" : {
+    "name" : "etki_headlight",
+    "class" : "Material",
+    "persistentId" : "7a5881fe-802b-401f-aede-cd370d4aabdb",
+    "Stages" : [ {}, {}, {}, {} ],
+    "mapTo" : "etki_headlight"
+  },
+  "etki_intcarpet" : {
+    "name" : "etki_intcarpet",
+    "class" : "Material",
+    "persistentId" : "cb190ea8-010c-413e-8fc8-29e2d489eb74",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/etki/etki_intcarpet_d_black.dds",
+        "normalMap" : "vehicles/etki/etki_intcarpet_n.dds",
+        "specularMap" : "vehicles/etki/etki_intcarpet_s.dds",
+        "useAnisotropic" : true
+      },
+      {},
+      {},
+      {}
+    ],
+    "mapTo" : "etki_intcarpet",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle"
+  },
+  "etki_interior" : {
+    "name" : "etki_interior",
+    "class" : "Material",
+    "persistentId" : "0d2e09e5-6d8e-45b5-b7b0-0c36bd8210cf",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/etki/etki_interior_d.dds",
+        "normalMap" : "vehicles/etki/etki_interior_n.dds",
+        "reflectivityMap" : "vehicles/etki/etki_interior_s.dds",
+        "specularMap" : "vehicles/etki/etki_interior_s.dds",
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/etki/etki_interior_d.dds",
+        "normalMap" : "vehicles/etki/etki_interior_n.dds",
+        "reflectivityMap" : "vehicles/etki/etki_interior_s.dds",
+        "specularMap" : "vehicles/etki/etki_interior_s.dds",
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {},
+      {}
+    ],
+    "alphaRef" : 0,
+    "cubemap" : "global_cubemap_metalblurred",
+    "mapTo" : "etki_interior",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle",
+    "translucentBlendOp" : "None"
+  },
+  "etki_lettering" : {
+    "name" : "etki_lettering",
+    "class" : "Material",
+    "persistentId" : "070fe046-6f84-477d-a965-a4fcc70b2aab",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/etki/etki_lettering_d.dds",
+        "normalMap" : "vehicles/etki/etki_lettering_n.dds",
+        "pixelSpecular" : true,
+        "reflectivityMap" : "vehicles/etki/etki_lettering_s.dds",
+        "specularMap" : "vehicles/etki/etki_lettering_s.dds",
+        "specularPower" : 128,
+        "useAnisotropic" : true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef" : 70,
+    "alphaTest" : true,
+    "castShadows" : false,
+    "dynamicCubemap" : true,
+    "mapTo" : "etki_lettering",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle",
+    "materialTag2" : "decal",
+    "translucent" : false
+  },
+  "etki_light_L" : {
+    "name" : "etki_light_L",
+    "class" : "Material",
+    "persistentId" : "ee9303d5-bd8f-4f9b-9e27-21490ce8348d",
+    "Stages" : [ {}, {}, {}, {} ],
+    "mapTo" : "etki_light_L"
+  },
+  "etki_light_R" : {
+    "name" : "etki_light_R",
+    "class" : "Material",
+    "persistentId" : "8971044c-0a57-4409-affe-29efc56098dc",
+    "Stages" : [ {}, {}, {}, {} ],
+    "mapTo" : "etki_light_R"
+  },
+  "etki_lights" : {
+    "name" : "etki_lights",
+    "mapTo" : "etki_lights",
+    "class" : "Material",
+    "persistentId" : "66c299a6-2bee-4b0b-8147-f88d61b0cffb",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/etki/etki_lights_b.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/etki/etki_lights_m.data.png",
+        "normalMap": "vehicles/etki/etki_lights_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 0,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "etki_lights_dmg" : {
+    "name" : "etki_lights_dmg",
+    "mapTo" : "etki_lights_dmg",
+    "class" : "Material",
+    "persistentId" : "be16b91f-ed14-42e6-9f14-537711f66711",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/etki/etki_lights_dmg_b.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/etki/etki_lights_dmg_m.data.png",
+        "normalMap": "vehicles/etki/etki_lights_dmg_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 0,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "etki_lights_on" : {
+    "name" : "etki_lights_on",
+    "mapTo" : "etki_lights_on",
+    "class" : "Material",
+    "persistentId" : "619dc780-5287-4d3c-a5a8-785689729bb9",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/etki/etki_lights_b.color.png",
+        "emissiveFactor": [
+          0.6,
+          0.6,
+          0.6
+        ],
+        "emissiveMap": "/vehicles/etki/etki_lights_g.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/etki/etki_lights_m.data.png",
+        "normalMap": "vehicles/etki/etki_lights_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 0,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "etki_lights_on_intense" : {
+    "name" : "etki_lights_on_intense",
+    "mapTo" : "etki_lights_on_intense",
+    "class" : "Material",
+    "persistentId" : "92085ef7-9919-4a47-8142-a7f5ce2dd135",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/etki/etki_lights_b.color.png",
+        "emissiveFactor": [
+          1,
+          1,
+          1
+        ],
+        "emissiveMap": "/vehicles/etki/etki_lights_g.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/etki/etki_lights_m.data.png",
+        "normalMap": "vehicles/etki/etki_lights_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "glow": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 0,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "etki_modparts" : {
+    "name" : "etki_modparts",
+    "mapTo" : "etki_modparts",
+    "class" : "Material",
+    "persistentId" : "b49481b5-4682-4f1f-9288-9b542ac179c3",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/etki/etki_modparts_ao.data.png",
+        "baseColorMap": "/vehicles/etki/etki_modparts_b.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/etki/etki_modparts_m.data.png",
+        "normalMap": "vehicles/etki/etki_modparts_n.normal.png",
+        "roughnessMap": "/vehicles/etki/etki_modparts_r.data.png",
+        "useAnisotropic": true
+      },
+      {
+        "ambientOcclusionMap": "/vehicles/etki/etki_modparts_ao.data.png",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/etki/etki_modparts_cc.data.png",
+        "clearCoatRoughnessFactor": 1,
+        "colorPaletteMap": "/vehicles/etki/etki_main_p.color.png",
+        "colorPaletteMapUseUV": 1,
+        "instanceDiffuse": true,
+        "metallicFactor": 1,
+        "normalMap": "vehicles/etki/etki_modparts_n.normal.png",
+        "opacityMap": "/vehicles/etki/etki_modparts_c.data.png",
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "activeLayers": 2,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 0,
+    "version": 1.5
+  },
+  "etki_reverselight" : {
+    "name" : "etki_reverselight",
+    "class" : "Material",
+    "persistentId" : "0e81bbda-c60d-47c3-b32d-0e0e52a52bf7",
+    "Stages" : [ {}, {}, {}, {} ],
+    "mapTo" : "etki_reverselight"
+  },
+  "etki_seats" : {
+    "name" : "etki_seats",
+    "class" : "Material",
+    "persistentId" : "05ff688b-05f0-49d2-9416-64ec2d30e697",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/etki/etki_seats_d.dds",
+        "normalMap" : "vehicles/etki/etki_seats_n.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/etki/etki_seats_s.dds",
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {},
+      {},
+      {}
+    ],
+    "mapTo" : "etki_seats",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle"
+  },
+  "etki_signal_L" : {
+    "name" : "etki_signal_L",
+    "class" : "Material",
+    "persistentId" : "5b7c9274-f6e8-4e75-8f59-dedd8ea8add9",
+    "Stages" : [ {}, {}, {}, {} ],
+    "mapTo" : "etki_signal_L"
+  },
+  "etki_signal_R" : {
+    "name" : "etki_signal_R",
+    "class" : "Material",
+    "persistentId" : "fe30d5b8-89c6-4a5c-a6d4-a59d793081bc",
+    "Stages" : [ {}, {}, {}, {} ],
+    "mapTo" : "etki_signal_R"
+  },
+  "etki_taillight" : {
+    "name" : "etki_taillight",
+    "class" : "Material",
+    "persistentId" : "2bba3ed3-9320-4004-9a2f-a530d7fe809b",
+    "Stages" : [ {}, {}, {}, {} ],
+    "mapTo" : "etki_taillight"
+  },
+  "etki_trim_chrome" : {
+    "name" : "etki_trim_chrome",
+    "class" : "Material",
+    "persistentId" : "0e47c475-9593-412d-b78b-2cdf9c52c610",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/common/null.dds",
+        "normalMap" : "vehicles/etki/etki_n.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/common/null.dds",
+        "specularPower" : 128,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/etki/etki_d.dds",
+        "normalMap" : "vehicles/etki/etki_n.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/etki/etki_s.dds",
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/etki/etki_c.dds",
+        "instanceDiffuse" : true,
+        "normalMap" : "vehicles/etki/etki_n.png",
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/etki/etki_s.dds",
+        "specularPower" : 128,
+        "useAnisotropic" : true
+      },
+      {}
+    ],
+    "alphaRef" : 0,
+    "dynamicCubemap" : true,
+    "mapTo" : "etki_trim_chrome",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle",
+    "translucent" : true,
+    "translucentBlendOp" : "None"
+  },
+  "etki_windshield_dmg" : {
+    "name" : "etki_windshield_dmg",
+    "mapTo" : "etki_windshield_dmg",
+    "class" : "Material",
+    "persistentId" : "60e3bfa1-48f9-4b3e-b9e6-55ee5878f415",
+    "Stages": [
+      {
+        "baseColorMap": "vehicles/etki/etki_glass_dmg_b.color.png",
+        "normalMap": "vehicles/common/windshield_dmg_n.dds",
+        "opacityMap": "/vehicles/etki/etki_glass_dmg_o.data.png",
+        "pixelSpecular": true,
+        "roughnessFactor": 0,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "castShadows": false,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 1852795252,
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}

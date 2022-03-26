@@ -1,0 +1,116 @@
+{
+"wendover_seat_FL_1eo": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Driver Seat 1eo",
+        "value":460,
+    },
+    "slotType" : "wendover_seat_FL",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["wendover_seat_FL_1eo" ["wendover_seat_FL","wendover_floor"],[],{"pos":{"x":0,"y":0.05,"z":0}}],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"collision":true},
+         {"selfCollision":false},
+         {"nodeWeight":15},
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         //seats flexbody
+         {"group":"wendover_seat_FL"},
+         {"collision":true},
+         {"selfCollision":true},
+         {"nodeWeight":2.5},
+         ["sf1l", 0.14, -0.27, 0.5],
+         ["sf1ll", 0.67, -0.27, 0.5],
+         ["sf2l", 0.14, 0.2, 0.44],
+         ["sf2ll", 0.67, 0.2, 0.44],
+         ["sf3l", 0.21, 0.45, 1.05],
+         ["sf3ll", 0.6, 0.45, 1.05],
+         {"group":""},
+    ],
+    "beams":[
+        ["id1:", "id2:"],
+        {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+        //main shape
+        {"beamSpring":501000,"beamDamp":300},
+        {"beamDeform":10000,"beamStrength":"FLT_MAX"},
+        {"deformLimitExpansion":1.1},
+        ["sf1l", "sf1ll"],
+        ["sf2l", "sf2ll"],
+        ["sf3l", "sf3ll"],
+        ["sf1l", "sf2l"],
+        ["sf2l", "sf3l"],
+        ["sf1ll", "sf2ll"],
+        ["sf2ll", "sf3ll"],
+        //crossing
+        {"beamDeform":7000,"beamStrength":"FLT_MAX"},
+        {"deformLimitExpansion":""},
+        ["sf1ll", "sf2l"],
+        ["sf2ll", "sf1l"],
+        ["sf2l", "sf3ll"],
+        ["sf3l", "sf2ll"],
+        //corners
+        {"beamDeform":3000},
+        ["sf3l", "sf1l"],
+        ["sf3ll", "sf1ll"],
+
+        //damper
+        {"beamSpring":0,"beamDamp":800},
+        ["sf3ll", "r5ll"],
+        ["sf3l", "r1ll"],
+
+        //attach
+        {"beamSpring":282000,"beamDamp":37.6},
+        {"beamDeform":6000,"beamStrength":"FLT_MAX"},
+        ["sf2l", "f3l"],
+        ["sf2l", "f2l"],
+        ["sf2l", "f3r"],
+        ["sf2l", "f2r"],
+
+        ["sf2ll", "f3l"],
+        ["sf2ll", "f3ll"],
+        ["sf2ll", "f2l"],
+        ["sf1l", "f2l"],
+        ["sf1ll", "f2l"],
+        ["sf1ll", "f2ll"],
+        ["sf1l", "f3l"],
+
+        //limiter
+        {"beamType":"|SUPPORT", "beamLongBound":5},
+        {"beamSpring":470000,"beamDamp":141},
+        {"beamPrecompression":0.9},
+        {"beamDeform":6000,"beamStrength":"FLT_MAX"},
+        {"optional":true},
+        ["sf3l", "q7l"],
+        ["sf3l", "q1l"],
+        ["sf3l", "rf2l"],
+        ["sf2l", "p4l"],
+        ["sf2l", "p3l"],
+        ["sf1l", "f1ll"],
+        ["sf1l", "f3ll"],
+
+        //to other seat
+        {"beamPrecompression":0.7},
+        ["sf1rr", "sf1ll"],
+        ["sf2rr", "sf2ll"],
+        ["sf3rr", "sf3ll"],
+        {"optional":false},
+        {"beamPrecompression":1},
+
+        {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+        {"deformLimitExpansion":""},
+    ],
+    "triangles":[
+        ["id1:", "id2:", "id3:"],
+        {"groundModel":"metal"},
+        {"dragCoef":0},
+        //front seat
+        ["sf2l",  "sf1l",  "sf1ll"],
+        ["sf1ll", "sf2ll", "sf2l"],
+        ["sf3l",  "sf2l",  "sf2ll"],
+        ["sf2ll", "sf3ll", "sf3l"],
+    ],
+},
+}

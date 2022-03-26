@@ -1,0 +1,26 @@
+{
+  "spyro_wheel" : {
+    "name" : "spyro_wheel",
+    "class" : "Material",
+    "persistentId" : "cac14360-d1ff-409f-872f-47b05324e0cb",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/coupe/spyro_wheel/interiors_details_dark.dds",
+        "diffuseColor" : [ 0, 0, 0, 0 ],
+        //"normalMap" : "vehicles/common/steer_04a_n.dds",
+        "specularMap" : "vehicles/common/steer_04a_s.dds",
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef" : 0,
+    "cubemap" : "vehicles/coupe/interiors_details_dark.dds",
+    "mapTo" : "Middle",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle",
+    "translucentBlendOp" : "None"
+  }
+}

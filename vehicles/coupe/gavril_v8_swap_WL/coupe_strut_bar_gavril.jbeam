@@ -1,0 +1,28 @@
+{
+"coupe_strut_bar_WL": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Strut Bar WL",
+        "value":150,
+    },
+    "slotType" : "coupe_strut_bar",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["coupe_strut_bar_supgercharger_WL", ["coupe_strutbar"]],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+          {"beamSpring":2701000,"beamDamp":100},
+          {"beamDeform":25000,"beamStrength":500000},
+          //rigid beams
+          ["fs1l","fs1r"],
+          ["fs1l","f14rr"],
+          ["fs1r","f14ll"],
+          ["fs1r", "f10rr"],
+          ["fs1l", "f10ll"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+}

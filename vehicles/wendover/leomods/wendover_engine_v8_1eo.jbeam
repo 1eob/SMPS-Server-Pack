@@ -1,0 +1,1011 @@
+{
+"wendover_engine_v8_4.4_1eo": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"4.4L V8 Engine 1eo",
+        "value":9650,
+    },
+    "slotType" : "wendover_engine",
+    "slots": [
+        ["type", "default", "description"],
+        ["wendover_enginemounts","wendover_enginemounts_heavy", "Engine Mounts", {"coreSlot":true}],
+        ["wendover_intake_v8","wendover_intake_v8", "Intake", {"coreSlot":true}],
+        ["wendover_oilpan_v8","wendover_oilpan_v8", "Oil Pan", {"coreSlot":true}],
+        ["wendover_exhaust","wendover_exhaust", "Exhaust"],
+        ["wendover_header_v8","wendover_header_v8", "Exhaust Manifold", {"coreSlot":true}],
+        ["wendover_engine_v8_ecu","wendover_engine_v8_ecu", "Engine Management", {"coreSlot":true}],
+        ["n2o_system","", "Nitrous Oxide System"],
+        ["wendover_engine_v8_internals","wendover_engine_v8_internals", "Engine Long Block", {"coreSlot":true}],
+        ["wendover_transmission","wendover_transmission_4A", "Transmission", {"nodeMove":{"x":0.03,"y":0.0,"z":0}}],
+    ],
+    "powertrain": [
+        ["type", "name", "inputName", "inputIndex"],
+        ["combustionEngine", "mainEngine", "dummy", 0],
+    ],
+    "mainEngine": {
+        "torque":[
+            ["rpm", "torque"],
+            [0, 0],
+            [500, 131],
+            [1000, 165],
+            [2000, 310],
+            [3000, 375],
+            [4000, 360],
+            [5000, 272],
+            [6000, 210],
+            [7000, 170],
+            [8000, 75],
+        ],
+        //engine performance
+        "idleRPM":750,
+        //max rpm physically capable of
+        "maxRPM":5800,
+        "inertia":0.16,
+        "friction":19,
+        "dynamicFriction":0.035,
+        "engineBrakeTorque":46,
+        //"burnEfficiency":0.33,
+        "burnEfficiency":[
+            [0, 0.1],
+            [0.05, 0.22],
+            [0.4, 0.34],
+            [0.7, 0.38],
+            [1, 0.26],
+        ],
+        //fuel system
+        "energyStorage": ["mainTank","auxTank"],
+        "requiredEnergyType":"gasoline",
+
+        //exhaust
+        "particulates":0.05,
+        "instantAfterFireCoef": 0.5,
+        "sustainedAfterFireCoef": 0.5,
+
+        //cooling and oil system
+        "thermalsEnabled":true,
+        "engineBlockMaterial":"aluminum",
+        "oilVolume":8,
+
+        //engine durability
+        "torqueReactionNodes:":["e1l","e2l","e4r"],
+        "cylinderWallTemperatureDamageThreshold":150,
+        "headGasketDamageThreshold":1500000,
+        "pistonRingDamageThreshold":1500000,
+        "connectingRodDamageThreshold":2000000,
+        "maxTorqueRating": 570,
+        "maxOverTorqueDamage": 500,
+
+        //node beam interface
+        "waterDamage": {"[engineGroup]:":["engine_intake"]},
+        "radiator": {"[engineGroup]:":["radiator"]},
+        "engineBlock": {"[engineGroup]:":["engine_block"]},
+        "breakTriggerBeam":"engine",
+        "uiName":"Engine",
+        "soundConfig": "soundConfig",
+        "soundConfigExhaust": "soundConfigExhaust",
+
+        //starter motor
+        "starterSample":"event:>Engine>Starter>v8_20xy_eng",
+        "starterSampleExhaust":"event:>Engine>Starter>v8_20xy_exh",
+        "shutOffSampleEngine":"event:>Engine>Shutoff>v8_20xy_eng",
+        "shutOffSampleExhaust":"event:>Engine>Shutoff>v8_20xy_exh",
+        "starterVolume":0.8,
+        "starterVolumeExhaust":0.65,
+        "shutOffVolumeEngine":0.5,
+        "shutOffVolumeExhaust":0.5,
+        "idleRPMStartRate":1.25,
+        "idleRPMStartCoef":1,
+
+        //engine deform groups
+        "deformGroups":["mainEngine", "mainEngine_intake", "mainEngine_accessories"]
+        "deformGroups_oilPan":["oilpan_damage"]
+    },
+    "soundConfig": {
+        "sampleName": "V8_cross_engine",
+        "intakeMuffling": 1,
+
+        "mainGain": -4,
+        "onLoadGain":1,
+        "offLoadGain":0.67,
+
+        "maxLoadMix": 0.7,
+        "minLoadMix": 0,
+
+        "eqLowGain": 0,
+        "eqLowFreq": 150,
+        "eqLowWidth": 0.2,
+
+        "eqHighGain": 0,
+        "eqHighFreq": 2500,
+        "eqHighWidth": 0.2,
+
+        "lowShelfGain":6,
+        "lowShelfFreq":120,
+
+        "highShelfGain":4,
+        "highShelfFreq":6000,
+
+        "fundamentalFrequencyCylinderCount":8,
+        "eqFundamentalGain": -2,
+    },
+    "soundConfigExhaust": {
+        "sampleName": "V8_cross_exhaust",
+
+        "mainGain": 3,
+        "onLoadGain":1,
+        "offLoadGain":0.68,
+
+        "maxLoadMix": 0.7,
+        "minLoadMix": 0,
+
+        "eqLowGain": 0,
+        "eqLowFreq": 150,
+        "eqLowWidth": 0.2,
+
+        "eqHighGain": 0,
+        "eqHighFreq": 2500,
+        "eqHighWidth": 0.2,
+
+        "lowShelfGain":-3,
+        "lowShelfFreq":90,
+
+        "highShelfGain":2,
+        "highShelfFreq":4400,
+
+        "fundamentalFrequencyCylinderCount":8,
+        "eqFundamentalGain": -4,
+    },
+    "vehicleController": {
+        "clutchLaunchStartRPM":1200,
+        "clutchLaunchTargetRPM":1600,
+        //**highShiftDown can be overwritten by automatic transmissions**
+        "highShiftDownRPM":[0,0,0,2600,2950,3150,3400,3400],
+        //**highShiftUp can be overwritten by intake modifications**
+        "highShiftUpRPM":5600,
+    },
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["wendover_engine_v8_1eo", ["wendover_engine"]],
+
+        {"deformGroup":"radhose_damage", "deformMaterialBase":"bruckell_mechanical", "deformMaterialDamaged":""},
+        ["wendover_radhose_v8_1eo", ["wendover_engine","wendover_radiator"]],
+        {"deformGroup":""},
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--3.3L v8 Engine--
+         {"selfCollision":false},
+         {"collision":true},
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"group":"wendover_engine"},
+         {"engineGroup":"engine_block"},
+         {"nodeWeight":27.32},
+         ["e1r", 0.2, -1.7, 0.26,{"chemEnergy":1000,"burnRate":0.39,"flashPoint":800,"specHeat": 0.2,"selfIgnitionCoef":false,"smokePoint":650,"baseTemp":"thermals","conductionRadius":0.12}],
+         ["e1l", 0.2, -1.46, 0.26],
+         ["e2r", -0.3, -1.7, 0.26,{"chemEnergy":1000,"burnRate":0.39,"flashPoint":800,"specHeat": 0.2,"selfIgnitionCoef":false,"smokePoint":650,"baseTemp":"thermals","conductionRadius":0.12}],
+         ["e2l", -0.3, -1.46, 0.26],
+         {"engineGroup":["engine_block","engine_intake"]},
+         ["e3r", 0.2, -1.84, 0.685,{"isExhaust":"mainEngine","chemEnergy":1000,"burnRate":0.39,"flashPoint":800,"specHeat": 0.2,"selfIgnitionCoef":false,"smokePoint":650,"baseTemp":"thermals","conductionRadius":0.12}],
+         ["e3l", 0.2, -1.32, 0.685],
+         ["e4r", -0.3, -1.84, 0.685,{"chemEnergy":1000,"burnRate":0.39,"flashPoint":800,"specHeat": 0.2,"selfIgnitionCoef":false,"smokePoint":650,"baseTemp":"thermals","conductionRadius":0.12}],
+         ["e4l", -0.3, -1.32, 0.685],
+         {"engineGroup":""},
+         {"group":""},
+         //oil pan damage
+         {"nodeWeight":2},
+         ["oilpan", -0.05, -1.55, 0.25],
+         //engine mount node
+         ["em1r", -0.46, -1.62, 0.535, {"nodeWeight":3}],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":8400600,"beamDamp":150},
+          {"beamDeform":540000,"beamStrength":"FLT_MAX"},
+          //engine
+          {"deformGroup":"mainEngine", "deformationTriggerRatio":0.001}
+          ["e1r","e1l"],
+          ["e2r","e2l"],
+          ["e3r","e3l"],
+          ["e4r","e4l"],
+
+          ["e1r","e2r"],
+          ["e1l","e2l"],
+          ["e3r","e4r"],
+          ["e3l","e4l"],
+
+          ["e1r","e3r"],
+          ["e1l","e3l"],
+          ["e2r","e4r", {"isExhaust":"mainEngine"}],
+          ["e2l","e4l"],
+
+          ["e2r","e3r"],
+          ["e2l","e3l"],
+          ["e2r","e3l"],
+          ["e2l","e3r"],
+
+          ["e1r","e4r"],
+          ["e1l","e4l"],
+          ["e1r","e4l"],
+          ["e1l","e4r"],
+
+          ["e1r","e2l"],
+          ["e1l","e2r"],
+          ["e3r","e4l"],
+          ["e3l","e4r"],
+
+          //engine mount node
+          {"beamSpring":4400000,"beamDamp":150},
+          {"beamDeform":90000,"beamStrength":"FLT_MAX"},
+          ["em1r","e3l"],
+          ["em1r","e3r"],
+          ["em1r","e4l"],
+          ["em1r","e4r"],
+          ["em1r", "e1r"],
+          ["em1r", "e1l"],
+          ["em1r", "e2l"],
+          ["em1r", "e2r"],
+
+          //oilpan node
+          {"beamSpring":1501000,"beamDamp":250},
+          {"beamDeform":17000,"beamStrength":"FLT_MAX"},
+          {"deformGroup":"oilpan_damage","deformationTriggerRatio":0.005},
+          ["oilpan", "e1r"],
+          ["oilpan", "e1l"],
+          ["oilpan", "e2r"],
+          ["oilpan", "e2l"],
+          ["oilpan", "e3r"],
+          ["oilpan", "e3l"],
+          ["oilpan", "e4r"],
+          ["oilpan", "e4l"],
+          {"deformGroup":""},
+
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            {"groundModel":"metal"},
+            /*
+            ["e5l", "e1l", "e3l"],
+            ["e4r", "e3r", "e2r"],
+            ["e3r", "e1r", "e2r"],
+            ["e1r", "e1l", "e2r"],
+            ["e2r", "e1l", "e2l"],
+            ["e3l", "e1l", "e3r"],
+            ["e3r", "e1l", "e1r"],
+            ["e4r", "e4l", "e3l"],
+            ["e4r", "e3l", "e3r"],
+            ["e4r", "e2r", "e4l"],
+            ["e4l", "e2r", "e2l"],
+            ["e4l", "e2l", "e6l"],
+            ["e6l", "e3l", "e4l"],
+            ["e6l", "e2l", "e5l"],
+            ["e6l", "e5l", "e3l"],
+            ["e2l", "e1l", "e5l"],
+            */
+            {"triangleType":"NONCOLLIDABLE"},
+            {"dragCoef":0},
+            ["e2l", "e2r", "e1r"],
+            ["e1r", "e1l", "e2l"],
+            {"triangleType":"NORMALTYPE"},
+    ],
+},
+"wendover_oilpan_v8": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Stock Oil Pan",
+        "value":90,
+    },
+    "slotType" : "wendover_oilpan_v8",
+    "mainEngine": {
+        //cooling and oil system
+        "oilVolume":8.0,
+
+        //engine durability
+        "oilpanMaximumSafeG": 1.2
+
+        //node beam interface
+        "oilpanNodes:":["oilpan","oilref"],
+
+        //engine deform groups
+        "deformGroups_oilPan":["oilpan_damage"]
+    },
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"selfCollision":false},
+         {"collision":true},
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+
+         //oil pan node
+         {"group":""},
+         {"nodeWeight":2},
+         ["oilpan", -0.05, -1.55, 0.25],
+         ["oilref", -0.05, -1.55, 0.75, {"nodeWeight":1, "collision":false}],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+
+          //oilpan node
+          {"beamSpring":1501000,"beamDamp":250},
+          {"beamDeform":17000,"beamStrength":"FLT_MAX"},
+          {"deformGroup":"oilpan_damage","deformationTriggerRatio":0.005},
+          ["oilpan", "e1r"],
+          ["oilpan", "e1l"],
+          ["oilpan", "e2r"],
+          ["oilpan", "e2l"],
+          ["oilpan", "e3r"],
+          ["oilpan", "e3l"],
+          ["oilpan", "e4r"],
+          ["oilpan", "e4l"],
+          {"deformGroup":""},
+
+          //oil ref
+          {"beamSpring":301000,"beamDamp":150},
+          {"beamDeform":25000,"beamStrength":"FLT_MAX"},
+          ["oilref", "e1r"],
+          ["oilref", "e1l"],
+          ["oilref", "e2r"],
+          ["oilref", "e2l"],
+          ["oilref", "e3r"],
+          ["oilref", "e3l"],
+          ["oilref", "e4r"],
+          ["oilref", "e4l"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"wendover_oilpan_v8_race": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Race Oil Pan",
+        "value":250,
+    },
+    "slotType" : "wendover_oilpan_v8",
+    "mainEngine": {
+        //cooling and oil system
+        "oilVolume":8.5,
+
+        //engine durability
+        "oilpanMaximumSafeG": 1.5
+
+        //node beam interface
+        "oilpanNodes:":["oilpan","oilref"],
+
+        //engine deform groups
+        "deformGroups_oilPan":["oilpan_damage"]
+    },
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"selfCollision":false},
+         {"collision":true},
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+
+         //oil pan node
+         {"group":""},
+         {"nodeWeight":2},
+         ["oilpan", -0.05, -1.55, 0.25],
+         ["oilref", -0.05, -1.55, 0.75, {"nodeWeight":1, "collision":false}],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+
+          //oilpan node
+          {"beamSpring":1501000,"beamDamp":250},
+          {"beamDeform":17000,"beamStrength":"FLT_MAX"},
+          {"deformGroup":"oilpan_damage","deformationTriggerRatio":0.005},
+          ["oilpan", "e1r"],
+          ["oilpan", "e1l"],
+          ["oilpan", "e2r"],
+          ["oilpan", "e2l"],
+          ["oilpan", "e3r"],
+          ["oilpan", "e3l"],
+          ["oilpan", "e4r"],
+          ["oilpan", "e4l"],
+          {"deformGroup":""},
+
+          //oil ref
+          {"beamSpring":301000,"beamDamp":150},
+          {"beamDeform":25000,"beamStrength":"FLT_MAX"},
+          ["oilref", "e1r"],
+          ["oilref", "e1l"],
+          ["oilref", "e2r"],
+          ["oilref", "e2l"],
+          ["oilref", "e3r"],
+          ["oilref", "e3l"],
+          ["oilref", "e4r"],
+          ["oilref", "e4l"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"wendover_engine_v8_ecu": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Stock ECU",
+        "value":1025,
+    },
+    "slotType" : "wendover_engine_v8_ecu",
+    "mainEngine":{
+        "revLimiterRPM":5600,
+        "revLimiterType":"rpmDrop",
+        "revLimiterRPMDrop":250,
+    },
+    "vehicleController": {
+    },
+},
+"wendover_engine_v8_ecu_race": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Adjustable Race ECU",
+        "value":3600,
+    },
+    "slotType" : "wendover_engine_v8_ecu",
+    "variables": [
+        ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+        ["$revLimiterRPM", "range", "rpm", "Engine", 5800, 3500, 6800, "RPM Limit", "RPM where the rev limiter prevents further revving", {"stepDis":50}],
+        ["$revLimiterCutTime", "range", "s", "Engine", 0.15, 0.01, 0.5, "RPM Limit Cut Time", "How fast the rev limiter cycles", {"stepDis":0.01}],
+    ],
+    "controller": [
+        ["fileName"],
+        ["twoStepLaunch", {"rpmLimit":4000}],
+    ],
+    "mainEngine":{
+        "$+idleRPM":100,
+        "revLimiterRPM":"$revLimiterRPM",
+        "revLimiterType":"timeBased",
+        "revLimiterCutTime":"$revLimiterCutTime",
+    },
+    "vehicleController": {
+        "highShiftUpRPM":"$=$revLimiterRPM - 200",
+    },
+},
+"wendover_engine_v8_internals": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Stock Long Block",
+        "value":600,
+    },
+    "slotType" : "wendover_engine_v8_internals",
+    "powertrainDamage":[
+        ["deviceName", "damageID"],
+        ["mainEngine", "block"],
+    ],
+    "mainEngine":{
+    },
+},
+"wendover_engine_internals_v8_heavy": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Heavy Duty Long Block",
+        "value":1600,
+    },
+    "slotType" : "wendover_engine_v8_internals",
+    "powertrainDamage":[
+        ["deviceName", "damageID"],
+        ["mainEngine", "block"],
+    ],
+    "mainEngine":{
+        //max rpm physically capable of
+        "$+maxRPM":200,
+        "$*friction":1.12,
+        "$*dynamicFriction":1.1,
+        "$*inertia":1.23,
+        "$*engineBrakeTorque":1.2,
+        //engine durability
+        "cylinderWallTemperatureDamageThreshold":175,
+        "headGasketDamageThreshold":1700000,
+        "pistonRingDamageThreshold":1700000,
+        "connectingRodDamageThreshold":2200000,
+        "$*maxTorqueRating": 2.6,
+        "$*maxOverTorqueDamage": 2.0,
+    },
+},
+"wendover_engine_v8_internals_ultra": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Ultra Heavy Duty Long Block",
+        "value":3100,
+    },
+    "slotType" : "wendover_engine_v8_internals",
+    "mainEngine":{
+        //max rpm physically capable of
+        "$+maxRPM":200,
+        "$*friction":1.25,
+        "$*dynamicFriction":1.18,
+        "$*inertia":1.35,
+        "$*engineBrakeTorque":1.25,
+        //engine durability
+        "cylinderWallTemperatureDamageThreshold":185,
+        "headGasketDamageThreshold":1700000,
+        "pistonRingDamageThreshold":1700000,
+        "connectingRodDamageThreshold":2200000,
+        "$*maxTorqueRating": 3.8,
+        "$*maxOverTorqueDamage": 2.0,
+    },
+},
+"wendover_engine_v8_internals_stage1": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Stage 1 Performance Long Block",
+        "value":2400,
+    },
+    "slotType" : "wendover_engine_v8_internals",
+    "mainEngine":{
+        "torqueModMult":[
+            ["rpm", "torque"],
+            [0,       1],
+            [1000, 0.95],
+            [2000, 0.91],
+            [3000, 0.99],
+            [4000, 1.11],
+            [5000, 1.31],
+            [6000, 1.4],
+            [7000, 1.5],
+        ],
+        //max rpm physically capable of
+        "$+maxRPM":700,
+        "$*engineBrakeTorque":1.33,
+        //engine durability
+        "cylinderWallTemperatureDamageThreshold":170,
+        //"maxTorqueRating": 1360,
+        //"maxOverTorqueDamage": 250,
+        "$*maxTorqueRating": 2.4,
+        "$*maxOverTorqueDamage": 1.5,
+    },
+},
+"wendover_engine_v8_internals_stage2": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Stage 2 Performance Long Block",
+        "value":3600,
+    },
+    "slotType" : "wendover_engine_v8_internals",
+    "mainEngine":{
+        "torqueModMult":[
+            ["rpm", "torque"],
+            [0,       1],
+            [1000, 0.92],
+            [3000, 1.16],
+            [4000, 1.35],
+            [5000, 1.76],
+            [6000, 2.16],
+            [7000, 2.4],
+        ],
+        //max rpm physically capable of
+        "$+maxRPM":1000,
+        "$*engineBrakeTorque":1.55,
+        //engine durability
+        "cylinderWallTemperatureDamageThreshold":180,
+        //"maxTorqueRating": 1620,
+        //"maxOverTorqueDamage": 250,
+        "$*maxTorqueRating": 2.75,
+        "$*maxOverTorqueDamage": 1.5,
+    },
+},
+"wendover_engine_v8_internals_stage3": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Stage 3 Performance Long Block",
+        "value":7100,
+    },
+    "slotType" : "wendover_engine_v8_internals",
+    "mainEngine":{
+        "torqueModMult":[
+            ["rpm", "torque"],
+            [0,       1],
+            [500,     1],
+            [1000, 0.83],
+            [1500, 0.77],
+            [2000, 0.80],
+            [2500, 0.90],
+            [3000, 1.00],
+            [3500, 1.15],
+            [4000, 1.45],
+            [4500, 1.75],
+            [5000, 2.10],
+            [5500, 2.40],
+            [6000, 2.62],
+            [6500, 2.69],
+            [7000, 2.63],
+            [7500, 2.30],
+            [8000, 2.00],
+        ],
+        //max rpm physically capable of
+        "$+maxRPM":1600,
+        "$*friction":0.90,
+        "$*dynamicFriction":0.91,
+        "$*inertia":1.1,
+        "$*engineBrakeTorque":1.58,
+        //engine durability
+        "cylinderWallTemperatureDamageThreshold":180,
+        //"maxTorqueRating": 2200,
+        //"maxOverTorqueDamage": 300,
+        "$*maxTorqueRating": 2.8,
+        "$*maxOverTorqueDamage": 0.8,
+    },
+},
+"wendover_supercharger_v8_stage1_1eo": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Stage 1 Supercharger 1eo",
+        "value":4100,
+    },
+    "slotType" : "wendover_intake_v8",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["wendover_supercharger_v8_1eo", ["wendover_engine","wendover_airbox"]],
+    ],
+    "powertrainDamage":[
+        ["deviceName", "damageID"],
+        ["mainEngine", "intake"],
+    ],
+    "supercharger": {
+        "whineLoopEvent": "event:>Vehicle>Forced_Induction>Supercharger_01>supercharger",
+        "whineVolumePerPSI": 0.015,
+        "whinePitchPer10kRPM": 1.22,
+        "gearRatio":1.3,
+        "clutchEngageRPM":0,
+        "pressureRatePSI":250,
+        "pressurePSIPer1kRPM":1.9,
+        "crankLossPer1kRPM":0.045,
+        "type":"roots",
+        "lobes":3,
+        "twistedLobes":true,
+        "boostController":[
+            //throttle in %, factor
+            [0,     0.2],
+            [100,     1],
+        ],
+    },
+    "mainEngine": {
+    "torqueModIntake":[
+            ["rpm", "torque"],
+            [0, 0],
+            [1000, 7],
+            [2000, 10],
+            [3000, 25],
+            [4000, 30],
+            [5000, 25],
+            [6000, 15],
+            [7000, 10],
+            [8000, 5],
+        ],
+        //supercharger name
+        "supercharger":"supercharger",
+        "$*instantAfterFireCoef": 1.5,
+        "$*sustainedAfterFireCoef": 1.5,
+
+        //supercharger deform groups
+        "deformGroups_supercharger":["mainEngine_supercharger"]
+    },
+    "soundConfig": {
+        "$+maxLoadMix": 0.2,
+        "$+intakeMuffling":-0.5,
+        "$+mainGain":1,
+    },
+    "vehicleController": {
+    },
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"selfCollision":false},
+         {"collision":true},
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"group":"wendover_airbox"},
+         {"engineGroup":"engine_intake"},
+         {"nodeWeight":1},
+         ["airb", 0.44, -1.78, 0.7],
+         {"nodeWeight":7},
+         {"group":"wendover_supercharger"},
+         ["sc1", 0.22, -1.6, 0.82],
+         ["sc2", -0.31, -1.6, 0.82],
+         {"engineGroup":""},
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+
+          //airbox
+          {"beamSpring":100600,"beamDamp":150},
+          {"beamDeform":12000,"beamStrength":36000},
+          {"deformGroup":"mainEngine_intake", "deformationTriggerRatio":0.01}
+          ["airb","e1r"],
+          ["airb","e2r"],
+          ["airb","e3r"],
+          ["airb","e4r"],
+          ["airb","e1l"],
+          ["airb","e2l"],
+          ["airb","e3l"],
+          ["airb","e4l"],
+
+          //supercharger
+          {"beamSpring":1501000,"beamDamp":100},
+          {"beamDeform":20000,"beamStrength":"FLT_MAX"},
+          {"deformGroup":"mainEngine_supercharger", "deformationTriggerRatio":0.001}
+          ["sc1","e1r"],
+          ["sc1","e2r"],
+          ["sc1","e3r"],
+          ["sc1","e4r"],
+          ["sc1","e1l"],
+          ["sc1","e2l"],
+          ["sc1","e3l"],
+          ["sc1","e4l"],
+          ["sc2","e1r"],
+          ["sc2","e2r"],
+          ["sc2","e3r"],
+          ["sc2","e4r"],
+          ["sc2","e1l"],
+          ["sc2","e2l"],
+          ["sc2","e3l"],
+          ["sc2","e4l"],
+          ["sc2","sc1"],
+          {"deformGroup":""}
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"wendover_supercharger_v8_stage2_1eo": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Stage 2 Supercharger 1eo",
+        "value":6700,
+    },
+    "slotType" : "wendover_intake_v8",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["wendover_supercharger_v8_1eo", ["wendover_engine","wendover_airbox"]],
+    ],
+    "supercharger": {
+        "gearRatio":1.55,
+        "clutchEngageRPM":0,
+        "pressureRatePSI":250,
+        "pressurePSIPer1kRPM":3.6,
+        "crankLossPer1kRPM":0.025,
+        "type":"roots",
+        "whineLoopEvent": "event:>Vehicle>Forced_Induction>Supercharger_02>supercharger",
+        "whineVolumePerPSI": 0.025,
+        "whinePitchPer10kRPM": 0.75,
+        "boostController":[
+            //throttle in %, factor
+            [0,     0.2],
+            [100,     1],
+        ],
+    },
+    "mainEngine": {
+    "torqueModIntake":[
+            ["rpm", "torque"],
+            [0, 0],
+            [1000, 3],
+            [2000, 10],
+            [3000, 25],
+            [4000, 30],
+            [5000, 25],
+            [6000, 15],
+            [7000, 10],
+            [8000, 5],
+        ],
+        //supercharger name
+        "supercharger":"supercharger",
+        "$*instantAfterFireCoef": 2,
+        "$*sustainedAfterFireCoef": 2,
+
+        //supercharger deform groups
+        "deformGroups_supercharger":["mainEngine_supercharger"]
+    },
+    "soundConfig": {
+        "$+maxLoadMix": 0.2,
+        "$+intakeMuffling":-0.5,
+        "$+mainGain":1.5,
+    },
+    "vehicleController": {
+        "revMatchThrottle":0.3,
+    },
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"selfCollision":false},
+         {"collision":true},
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"group":"wendover_airbox"},
+         {"engineGroup":"engine_intake"},
+         {"nodeWeight":1},
+         ["airb", 0.44, -1.78, 0.7],
+         {"nodeWeight":8},
+         {"group":"wendover_supercharger"},
+         ["sc1", 0.22, -1.6, 0.82],
+         ["sc2", -0.31, -1.6, 0.82],
+         {"engineGroup":""},
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+
+          //airbox
+          {"beamSpring":100600,"beamDamp":150},
+          {"beamDeform":12000,"beamStrength":36000},
+          {"deformGroup":"mainEngine_intake", "deformationTriggerRatio":0.01}
+          ["airb","e1r"],
+          ["airb","e2r"],
+          ["airb","e3r"],
+          ["airb","e4r"],
+          ["airb","e1l"],
+          ["airb","e2l"],
+          ["airb","e3l"],
+          ["airb","e4l"],
+
+          //supercharger
+          {"beamSpring":1501000,"beamDamp":100},
+          {"beamDeform":20000,"beamStrength":"FLT_MAX"},
+          {"deformGroup":"mainEngine_supercharger", "deformationTriggerRatio":0.001}
+          ["sc1","e1r"],
+          ["sc1","e2r"],
+          ["sc1","e3r"],
+          ["sc1","e4r"],
+          ["sc1","e1l"],
+          ["sc1","e2l"],
+          ["sc1","e3l"],
+          ["sc1","e4l"],
+          ["sc2","e1r"],
+          ["sc2","e2r"],
+          ["sc2","e3r"],
+          ["sc2","e4r"],
+          ["sc2","e1l"],
+          ["sc2","e2l"],
+          ["sc2","e3l"],
+          ["sc2","e4l"],
+          ["sc2","sc1"],
+          {"deformGroup":""}
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"wendover_supercharger_v8_stage3_1eo": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Stage 3 Supercharger 1eo",
+        "value":10200,
+    },
+    "slotType" : "wendover_intake_v8",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["wendover_supercharger_v8_1eo", ["wendover_engine","wendover_airbox","wendover_supercharger"]],
+    ],
+    "supercharger": {
+        "gearRatio":2.2,
+        "clutchEngageRPM":0,
+        "pressureRatePSI":250,
+        "pressurePSIPer1kRPM":5.2,
+        "crankLossPer1kRPM":0.027,
+        "type":"roots",
+        "whineLoopEvent": "event:>Vehicle>Forced_Induction>Supercharger_02>supercharger",
+        "whineVolumePerPSI": 0.03,
+        "whinePitchPer10kRPM": 0.80,
+        "boostController":[
+            //throttle in %, factor
+            [0,     0.2],
+            [100,     1],
+        ],
+    },
+    "mainEngine": {
+        //supercharger name
+        "supercharger":"supercharger",
+        "$*instantAfterFireCoef": 2.5,
+        "$*sustainedAfterFireCoef": 2,
+
+        //supercharger deform groups
+        "deformGroups_supercharger":["mainEngine_supercharger"]
+    },
+    "soundConfig": {
+        "$+maxLoadMix": 0.2,
+        "$+intakeMuffling":-1,
+        "$+mainGain":3,
+        "$+offLoadGain":-0.05,
+    },
+    "vehicleController": {
+        "revMatchThrottle":0.25,
+    },
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"selfCollision":false},
+         {"collision":true},
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"group":"wendover_airbox"},
+         {"engineGroup":"engine_intake"},
+         {"nodeWeight":1},
+         ["airb", 0.44, -1.78, 0.7],
+         {"nodeWeight":9},
+         {"group":"wendover_supercharger"},
+         ["sc1", 0.22, -1.6, 0.82],
+         ["sc2", -0.31, -1.6, 0.82],
+         {"engineGroup":""},
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+
+          //airbox
+          {"beamSpring":100600,"beamDamp":150},
+          {"beamDeform":12000,"beamStrength":36000},
+          {"deformGroup":"mainEngine_intake", "deformationTriggerRatio":0.01}
+          ["airb","e1r"],
+          ["airb","e2r"],
+          ["airb","e3r"],
+          ["airb","e4r"],
+          ["airb","e1l"],
+          ["airb","e2l"],
+          ["airb","e3l"],
+          ["airb","e4l"],
+
+          //supercharger
+          {"beamSpring":1501000,"beamDamp":100},
+          {"beamDeform":20000,"beamStrength":"FLT_MAX"},
+          {"deformGroup":"mainEngine_supercharger", "deformationTriggerRatio":0.001}
+          ["sc1","e1r"],
+          ["sc1","e2r"],
+          ["sc1","e3r"],
+          ["sc1","e4r"],
+          ["sc1","e1l"],
+          ["sc1","e2l"],
+          ["sc1","e3l"],
+          ["sc1","e4l"],
+          ["sc2","e1r"],
+          ["sc2","e2r"],
+          ["sc2","e3r"],
+          ["sc2","e4r"],
+          ["sc2","e1l"],
+          ["sc2","e2l"],
+          ["sc2","e3l"],
+          ["sc2","e4l"],
+          ["sc2","sc1"],
+          {"deformGroup":""}
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"wendover_header_v8_1eo": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Exhaust Manifold 1eo",
+        "value":200,
+    },
+    "slotType" : "wendover_header_v8",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["wendover_header_v81_1eo", ["wendover_engine", "wendover_header"]],
+    ],
+    "nodes":[
+         ["id", "posX", "posY", "posZ"],
+         {"selfCollision":false},
+         {"collision":true},
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         {"nodeWeight":3.0},
+         {"group":"wendover_header"},
+         ["exm1r", 0.09, -1.3, 0.45, {"afterFireAudioCoef":1,"afterFireVisualCoef":1, "exhaustAudioMufflingCoef":1, "exhaustAudioGainChange":0}],
+         {"group":"none"},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"deformLimitExpansion":1.2},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":5010000,"beamDamp":90},
+          {"beamDeform":90000,"beamStrength":"FLT_MAX"},
+
+          //exhaust manifold
+          ["exm1r","e3l"],
+          ["exm1r","e3r", {"isExhaust":"mainEngine"}],
+          ["exm1r","e4l"],
+          ["exm1r","e4r"],
+          ["exm1r", "e1r"],
+          ["exm1r", "e1l"],
+          ["exm1r", "e2l"],
+          ["e2r", "exm1r"],
+
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+}

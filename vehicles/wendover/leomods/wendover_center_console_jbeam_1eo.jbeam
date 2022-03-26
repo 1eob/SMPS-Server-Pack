@@ -1,0 +1,18 @@
+{
+"wendover_centerconsole_1eo":{
+    "information":{
+        "authors":"BeamNG",
+        "name":"Center Console 1eo",
+        "value":400,
+    },
+    "slotType" : "wendover_centerconsole",
+    "slots":[
+        ["type", "default", "description"],
+        ["wendover_shifter_console","wendover_shifter_A_console", "Console Shifter", {"coreSlot":true}],
+    ],
+    "flexbodies":[
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["wendover_console_b_1eo", ["wendover_floor"],[], {"pos":{"x":0.0, "y":0.0, "z":0.0}}],
+    ],
+},
+}

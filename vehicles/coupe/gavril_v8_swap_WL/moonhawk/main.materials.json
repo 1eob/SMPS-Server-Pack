@@ -1,0 +1,631 @@
+{
+  "moonhawk" : {
+    "name" : "moonhawk",
+    "mapTo" : "moonhawk_old",
+    "class" : "Material",
+    "persistentId" : "87792bad-327f-417a-9e50-68dc1562df6a",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/common/null.dds",
+        "normalMap" : "vehicles/moonhawk/moonhawk_n.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/common/null.dds",
+        "specularPower" : 128,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/moonhawk/moonhawk_d.dds",
+        "normalMap" : "vehicles/moonhawk/moonhawk_n.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/moonhawk/moonhawk_s.dds",
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/moonhawk/moonhawk_c.dds",
+        "instanceDiffuse" : true,
+        "normalMap" : "vehicles/moonhawk/moonhawk_n.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/moonhawk/moonhawk_s.dds",
+        "specularPower" : 10,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/moonhawk/moonhawk_chrome.dds",
+        "colorPaletteMap" : "vehicles/moonhawk/moonhawk_skin_chrome.dds",
+        "normalMap" : "vehicles/moonhawk/moonhawk_n.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/moonhawk/moonhawk_s.dds",
+        "specularPower" : 10,
+        "useAnisotropic" : true
+      }
+    ],
+    "alphaRef" : 0,
+    "dynamicCubemap" : true,
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle",
+    "translucent" : true,
+    "translucentBlendOp" : "None"
+  },
+  "moonhawk_main" : {
+    "name" : "moonhawk_main",
+    "mapTo" : "moonhawk",
+    "class" : "Material",
+    "persistentId" : "3fe3d553-a2de-4e29-8d18-3351b5bce90e",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/moonhawk/moonhawk_main_ao.data.png",
+        "baseColorMap": "/vehicles/moonhawk/moonhawk_main_b.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/moonhawk/moonhawk_main_m.data.png",
+        "normalMap": "vehicles/moonhawk/moonhawk_n.dds",
+        "roughnessMap": "/vehicles/moonhawk/moonhawk_main_r.data.png",
+        "useAnisotropic": true
+      },
+      {
+        "ambientOcclusionMap": "/vehicles/moonhawk/moonhawk_main_ao.data.png",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/moonhawk/moonhawk_main_cc.data.png",
+        "clearCoatRoughnessFactor": 1,
+        "colorPaletteMap": "/vehicles/moonhawk/moonhawk_main_p.color.png",
+        "colorPaletteMapUseUV": 1,
+        "instanceDiffuse": true,
+        "metallicFactor": 1,
+        "normalMap": "/vehicles/moonhawk/moonhawk_n.dds",
+        "opacityMap": "/vehicles/moonhawk/moonhawk_main_c.data.png",
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "activeLayers": 2,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 0,
+    "version": 1.5
+  },
+  "moonhawk_brakelight" : {
+    "name" : "moonhawk_brakelight",
+    "class" : "Material",
+    "persistentId" : "e57b2188-d732-40de-bbe4-7c9df5a96a1b",
+    "Stages" : [ {}, {}, {}, {} ],
+    "mapTo" : "moonhawk_brakelight"
+  },
+  "moonhawk_engines" : {
+    "name" : "moonhawk_engines",
+    "class" : "Material",
+    "persistentId" : "82933630-66f0-4dda-82e2-8a0393d9a1fd",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/common/null.dds",
+        "normalMap" : "vehicles/moonhawk/moonhawk_engines_n.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/common/null.dds",
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "vehicles/moonhawk/moonhawk_engines_d.dds",
+        "normalMap" : "vehicles/moonhawk/moonhawk_engines_n.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/moonhawk/moonhawk_engines_s.dds",
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {},
+      {}
+    ],
+    "alphaRef" : 0,
+    "dynamicCubemap" : true,
+    "mapTo" : "moonhawk_engines",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle",
+    "translucent" : true,
+    "translucentBlendOp" : "None"
+  },
+  "moonhawk_gauges" : {
+    "name" : "moonhawk_gauges",
+    "class" : "Material",
+    "persistentId" : "b70f4a4a-3c0d-4d0d-ae6d-a4a48f3ca3a3",
+    "Stages" : [
+      {
+        "colorMap" : "moonhawk_gauges_d.dds",
+        "normalMap" : "moonhawk_gauges_n.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "moonhawk_gauges_s.dds",
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {},
+      {},
+      {}
+    ],
+    "mapTo" : "moonhawk_gauges",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle"
+  },
+  "moonhawk_gauges_on" : {
+    "name" : "moonhawk_gauges_on",
+    "class" : "Material",
+    "persistentId" : "876bb84d-d93e-4435-a68b-180c702f20ef",
+    "Stages" : [
+      {
+        "colorMap" : "moonhawk_gauges_d.dds",
+        "normalMap" : "moonhawk_gauges_n.dds",
+        "pixelSpecular" : true,
+        "specularMap" : "moonhawk_gauges_s.dds",
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {
+        "colorMap" : "moonhawk_gauges_g.dds",
+        "emissive" : true,
+        "normalMap" : "moonhawk_gauges_n.dds",
+        "specularMap" : "moonhawk_gauges_s.dds",
+        "useAnisotropic" : true
+      },
+      {},
+      {}
+    ],
+    "mapTo" : "moonhawk_gauges_on",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle"
+  },
+  "moonhawk_glass" : {
+    "name" : "moonhawk_glass",
+    "mapTo" : "moonhawk_glass",
+    "class" : "Material",
+    "persistentId" : "bd93599e-432e-428a-aafe-41925025c86b",
+    "Stages": [
+      {
+        "baseColorMap": "vehicles/moonhawk/moonhawk_glass_b.color.png",
+        "normalMap": "/vehicles/common/null_n.dds",
+        "opacityMap": "/vehicles/moonhawk/moonhawk_glass_o.data.png",
+        "pixelSpecular": true,
+        "roughnessFactor": 0,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "castShadows": false,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 1852795252,
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "translucentRecvShadows": true,
+    "version": 1.5
+  },
+  "moonhawk_glass_dmg" : {
+    "name" : "moonhawk_glass_dmg",
+    "mapTo" : "moonhawk_glass_dmg",
+    "class" : "Material",
+    "persistentId" : "03c5543b-aa74-415a-9be5-a81ffb8edc7f",
+    "Stages": [
+      {
+        "baseColorMap": "vehicles/moonhawk/moonhawk_glass_dmg_b.color.png",
+        "normalMap": "vehicles/common/glass_dmg_n.dds",
+        "opacityMap": "/vehicles/moonhawk/moonhawk_glass_dmg_o.data.png",
+        "pixelSpecular": true,
+        "roughnessFactor": 0,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 20,
+    "alphaTest": true,
+    "castShadows": false,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 1852795252,
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "translucentRecvShadows": true,
+    "version": 1.5
+  },
+  "moonhawk_glass_int" : {
+    "name" : "moonhawk_glass_int",
+    "class" : "Material",
+    "persistentId" : "3b097005-4de5-4b01-a674-0caa40c55066",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/moonhawk/moonhawk_glass_d.dds",
+        "diffuseColor" : [ 0, 0, 0, 1 ],
+        "pixelSpecular" : true,
+        "specularMap" : "vehicles/common/null.dds",
+        "specularPower" : 128,
+        "useAnisotropic" : true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef" : 0,
+    "castShadows" : false,
+    "mapTo" : "moonhawk_glass_int",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle",
+    "translucent" : true
+  },
+  "moonhawk_headlight" : {
+    "name" : "moonhawk_headlight",
+    "class" : "Material",
+    "persistentId" : "edd3591f-1375-41be-b429-07743037d6c1",
+    "Stages" : [ {}, {}, {}, {} ],
+    "mapTo" : "moonhawk_headlight"
+  },
+  "moonhawk_highbeam" : {
+    "name" : "moonhawk_highbeam",
+    "class" : "Material",
+    "persistentId" : "8fd5edb2-02a9-4120-a104-bf20cc1ff7f0",
+    "Stages" : [ {}, {}, {}, {} ],
+    "mapTo" : "moonhawk_highbeam"
+  },
+  "moonhawk_int_checkengine" : {
+    "name" : "moonhawk_int_checkengine",
+    "class" : "Material",
+    "persistentId" : "819e24a3-a96d-46ee-a2d4-e9e6264e7a60",
+    "Stages" : [ {}, {}, {}, {} ],
+    "mapTo" : "moonhawk_int_checkengine"
+  },
+  "moonhawk_int_highbeam" : {
+    "name" : "moonhawk_int_highbeam",
+    "class" : "Material",
+    "persistentId" : "30b011c4-05fb-4316-a7cf-a8da02d940f0",
+    "Stages" : [ {}, {}, {}, {} ],
+    "mapTo" : "moonhawk_int_highbeam"
+  },
+  "moonhawk_int_lowcoolant" : {
+    "name" : "moonhawk_int_lowcoolant",
+    "class" : "Material",
+    "persistentId" : "a89e7070-33d1-4925-bbc0-4cbbbd2f1eb9",
+    "Stages" : [ {}, {}, {}, {} ],
+    "mapTo" : "moonhawk_int_lowcoolant"
+  },
+  "moonhawk_int_lowfuel" : {
+    "name" : "moonhawk_int_lowfuel",
+    "class" : "Material",
+    "persistentId" : "778f0717-1f6a-45e5-a8e5-172705933a1f",
+    "Stages" : [ {}, {}, {}, {} ],
+    "mapTo" : "moonhawk_int_lowfuel"
+  },
+  "moonhawk_int_lowoil" : {
+    "name" : "moonhawk_int_lowoil",
+    "class" : "Material",
+    "persistentId" : "7d6e76fc-42e7-4f8a-bacf-f3da1a84a2a4",
+    "Stages" : [ {}, {}, {}, {} ],
+    "mapTo" : "moonhawk_int_lowoil"
+  },
+  "moonhawk_int_parkingbrake" : {
+    "name" : "moonhawk_int_parkingbrake",
+    "class" : "Material",
+    "persistentId" : "4f9dac45-bef9-46dc-9bd8-00fad9b707bd",
+    "Stages" : [ {}, {}, {}, {} ],
+    "mapTo" : "moonhawk_int_parkingbrake"
+  },
+  "moonhawk_int_signal_L" : {
+    "name" : "moonhawk_int_signal_L",
+    "class" : "Material",
+    "persistentId" : "d5828b3c-2c6c-4292-86b7-25b161a17448",
+    "Stages" : [ {}, {}, {}, {} ],
+    "mapTo" : "moonhawk_int_signal_L"
+  },
+  "moonhawk_int_signal_R" : {
+    "name" : "moonhawk_int_signal_R",
+    "class" : "Material",
+    "persistentId" : "8004dfa1-040c-4fce-b9be-7c50c92b4746",
+    "Stages" : [ {}, {}, {}, {} ],
+    "mapTo" : "moonhawk_int_signal_R"
+  },
+  "moonhawk_intcarpet" : {
+    "name" : "moonhawk_intcarpet",
+    "class" : "Material",
+    "persistentId" : "f5d0e7fa-3104-4703-b5d9-81df923ddac6",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/moonhawk/moonhawk_intcarpet_d_brown.dds",
+        "normalMap" : "vehicles/moonhawk/moonhawk_intcarpet_n.dds",
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {},
+      {},
+      {}
+    ],
+    "mapTo" : "moonhawk_intcarpet",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle"
+  },
+  "moonhawk_interior" : {
+    "name" : "moonhawk_interior",
+    "class" : "Material",
+    "persistentId" : "5ad2b005-846b-43aa-b760-e30fc986ad52",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/moonhawk/moonhawk_interior_d.dds",
+        "diffuseColor" : [ 1, 1, 1, 0.4 ],
+        "normalMap" : "vehicles/moonhawk/moonhawk_interior_n.dds",
+        "specularMap" : "vehicles/moonhawk/moonhawk_interior_s.dds",
+        "specularPower" : 32,
+        "useAnisotropic" : true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef" : 0,
+    "cubemap" : "global_cubemap_metalblurred",
+    "mapTo" : "moonhawk_interior",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle",
+    "translucentBlendOp" : "None"
+  },
+  "moonhawk_lettering" : {
+    "name" : "moonhawk_lettering",
+    "class" : "Material",
+    "persistentId" : "9c724e24-4012-4483-8964-a1065c1e54af",
+    "Stages" : [
+      {
+        "colorMap" : "vehicles/moonhawk/moonhawk_lettering_d.dds",
+        "normalMap" : "vehicles/moonhawk/moonhawk_lettering_n.dds",
+        "pixelSpecular" : true,
+        "reflectivityMap" : "vehicles/moonhawk/moonhawk_lettering_s.dds",
+        "specularMap" : "vehicles/moonhawk/moonhawk_lettering_s.dds",
+        "specularPower" : 128,
+        "useAnisotropic" : true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef" : 70,
+    "alphaTest" : true,
+    "castShadows" : false,
+    "dynamicCubemap" : true,
+    "mapTo" : "moonhawk_lettering",
+    "materialTag0" : "beamng",
+    "materialTag1" : "vehicle",
+    "materialTag2" : "decal",
+    "translucent" : false
+  },
+  "moonhawk_lights" : {
+    "name" : "moonhawk_lights",
+    "mapTo" : "moonhawk_lights",
+    "class" : "Material",
+    "persistentId" : "77fc0dd9-3f65-47e9-9caf-b466a7014b98",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/moonhawk/moonhawk_lights_b.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/moonhawk/moonhawk_lights_m.data.png",
+        "normalMap": "vehicles/moonhawk/moonhawk_lights_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 0,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "moonhawk_lights_dmg" : {
+    "name" : "moonhawk_lights_dmg",
+    "mapTo" : "moonhawk_lights_dmg",
+    "class" : "Material",
+    "persistentId" : "408c70b9-714e-4d7f-9d94-fdefe80f2576",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/moonhawk/moonhawk_lights_dmg_b.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/moonhawk/moonhawk_lights_dmg_m.data.png",
+        "normalMap": "vehicles/moonhawk/moonhawk_lights_dmg_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 0,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "moonhawk_lights_on": {
+    "name": "moonhawk_lights_on",
+    "mapTo": "moonhawk_lights_on",
+    "class": "Material",
+    "persistentId": "433b673e-527f-46cc-a755-fbc418324a82",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/moonhawk/moonhawk_lights_b.color.png",
+        "emissiveFactor": [
+          0.6,
+          0.6,
+          0.6
+        ],
+        "emissiveMap": "/vehicles/moonhawk/moonhawk_lights_g.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/moonhawk/moonhawk_lights_m.data.png",
+        "normalMap": "vehicles/moonhawk/moonhawk_lights_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 0,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "moonhawk_lights_on_intense" : {
+    "name" : "moonhawk_lights_on_intense",
+    "mapTo" : "moonhawk_lights_on_intense",
+    "class" : "Material",
+    "persistentId" : "ea428ed8-0e61-415c-8584-8de4e727957f",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/moonhawk/moonhawk_lights_b.color.png",
+        "emissiveFactor": [
+          1,
+          1,
+          1
+        ],
+        "emissiveMap": "/vehicles/moonhawk/moonhawk_lights_g.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/moonhawk/moonhawk_lights_m.data.png",
+        "normalMap": "vehicles/moonhawk/moonhawk_lights_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 0,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "moonhawk_lowbeam" : {
+    "name" : "moonhawk_lowbeam",
+    "class" : "Material",
+    "persistentId" : "12f0ff7b-0059-4b6e-81b3-1e6c0dbc7077",
+    "Stages" : [ {}, {}, {}, {} ],
+    "mapTo" : "moonhawk_lowbeam"
+  },
+  "moonhawk_nosecone_alt" : {
+    "name" : "moonhawk_nosecone_alt",
+    "mapTo" : "moonhawk_nosecone_alt",
+    "class" : "Material",
+    "persistentId" : "c65efec7-da6b-4fa1-bc18-37d819d89db9",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/moonhawk/moonhawk_nosecone_alt_ao.data.png",
+        "baseColorMap": "/vehicles/moonhawk/moonhawk_nosecone_alt_b.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/moonhawk/moonhawk_nosecone_alt_m.data.png",
+        "normalMap": "vehicles/moonhawk/moonhawk_nosecone_alt_n.dds",
+        "roughnessMap": "/vehicles/moonhawk/moonhawk_nosecone_alt_r.data.png",
+        "useAnisotropic": true
+      },
+      {
+        "ambientOcclusionMap": "/vehicles/moonhawk/moonhawk_nosecone_alt_ao.data.png",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/moonhawk/moonhawk_nosecone_alt_c.data.png",
+        "clearCoatRoughnessFactor": 1,
+        "colorPaletteMap": "/vehicles/moonhawk/moonhawk_main_p.color.png",
+        "instanceDiffuse": true,
+        "colorPaletteMapUseUV": 1,
+        "metallicFactor": 1,
+        "normalMap": "/vehicles/moonhawk/moonhawk_nosecone_alt_n.dds",
+        "opacityMap": "/vehicles/moonhawk/moonhawk_nosecone_alt_c.data.png",
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "activeLayers": 2,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 0,
+    "version": 1.5
+  },
+  "moonhawk_reverselight" : {
+    "name" : "moonhawk_reverselight",
+    "class" : "Material",
+    "persistentId" : "7885bac0-2084-4c9a-93c7-8fc5f3b214ae",
+    "Stages" : [ {}, {}, {}, {} ],
+    "mapTo" : "moonhawk_reverselight"
+  },
+  "moonhawk_signal_L" : {
+    "name" : "moonhawk_signal_L",
+    "class" : "Material",
+    "persistentId" : "aef60cfc-e805-4bec-a392-5f7a20fd06c6",
+    "Stages" : [ {}, {}, {}, {} ],
+    "mapTo" : "moonhawk_signal_L"
+  },
+  "moonhawk_signal_R" : {
+    "name" : "moonhawk_signal_R",
+    "class" : "Material",
+    "persistentId" : "f83f3ba5-8551-42ed-b7c6-f6ed69a00155",
+    "Stages" : [ {}, {}, {}, {} ],
+    "mapTo" : "moonhawk_signal_R"
+  },
+  "moonhawk_taillight_L" : {
+    "name" : "moonhawk_taillight_L",
+    "class" : "Material",
+    "persistentId" : "063785e2-e870-4041-97fb-b4944ee9da22",
+    "Stages" : [ {}, {}, {}, {} ],
+    "mapTo" : "moonhawk_taillight_L"
+  },
+  "moonhawk_taillight_R" : {
+    "name" : "moonhawk_taillight_R",
+    "class" : "Material",
+    "persistentId" : "4ea6f754-f54f-47a0-a6cb-36b69baec003",
+    "Stages" : [ {}, {}, {}, {} ],
+    "mapTo" : "moonhawk_taillight_R"
+  },
+  "moonhawk_windshield_dmg" : {
+    "name" : "moonhawk_windshield_dmg",
+    "mapTo" : "moonhawk_windshield_dmg",
+    "class" : "Material",
+    "persistentId" : "60e3bfa1-48f9-4b3e-b9e6-55ee5878f415",
+    "Stages": [
+      {
+        "baseColorMap": "vehicles/moonhawk/moonhawk_glass_dmg_b.color.png",
+        "normalMap": "vehicles/common/windshield_dmg_n.dds",
+        "opacityMap": "/vehicles/moonhawk/moonhawk_glass_dmg_o.data.png",
+        "pixelSpecular": true,
+        "roughnessFactor": 0,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "castShadows": false,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 1852795252,
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}

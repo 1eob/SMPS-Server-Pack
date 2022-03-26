@@ -1,0 +1,22 @@
+{
+  "moonhawk_engines": {
+    "name": "moonhawk_engines",
+    "mapTo": "moonhawk_engines",
+    "class": "material",
+    "persistentId": "7090a606-b9f4-4af4-aeb7-85d6e64ab548",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.588,
+          0.588,
+          0.588,
+          1
+        ]
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  }
+}

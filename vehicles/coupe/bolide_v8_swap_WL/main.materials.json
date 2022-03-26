@@ -1,0 +1,17 @@
+{
+  "coupe_001": {
+    "name": "coupe_001",
+    "mapTo": "coupe.001",
+    "class": "Material",
+    "persistentId": "7515a4e4-cc3d-4bd7-9e13-525be8eefa4c",
+    "Stages": [
+      {
+        "colorMap": "coupe_d_alt.png.001"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  }
+}

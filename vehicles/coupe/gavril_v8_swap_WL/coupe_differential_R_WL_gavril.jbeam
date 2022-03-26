@@ -1,0 +1,33 @@
+{
+"coupe_driveshaft_R_WL": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Rear Driveshaft WL",
+        "value":200,
+    },
+    "slotType" : "coupe_driveshaft_R",
+    "powertrain" : [
+        ["type", "name", "inputName", "inputIndex"],
+        //rear driveshaft
+        ["torsionReactor", "torsionReactorR", "gearbox", 1, {}],
+        ["shaft", "driveshaft", "torsionReactorR", 1, {"breakTriggerBeam":"driveshaft", "uiName":"Rear Driveshaft", "electricsName":"driveshaft", "friction":0.22, "dynamicFriction": 0.0005}],
+        //["shaft", "driveshaft", "torsionReactorR", 1, {"breakTriggerBeam":"driveshaft", "uiName":"Rear Driveshaft", "electricsName":"driveshaft", "friction":1}],
+    ],
+    "torsionReactorR": {
+        "torqueReactionNodes:":["e1l","e2l","e4r"],
+    },
+     "props": [
+        ["func"      , "mesh"           , "idRef:", "idX:", "idY:", "baseRotation"        , "rotation"            , "translation"        , "min", "max", "offset", "multiplier",],
+        ["driveshaft", "coupe_driveshaft_WL", "f3r", "f3l", "f8r",    {"x":0, "y":0, "z":0}, {"x":0, "y":1, "z":0} , {"x":0, "y":0, "z":0}, -360, 360, 0, 1,{"breakGroup":"driveshaft","deformGroup":"driveshaft","optional":true}],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //driveshaft
+          {"beamPrecompression":1.0, "beamType":"|BOUNDED", "beamLongBound":0.01, "beamShortBound":0.01},
+          {"beamSpring":0,"beamDamp":0,"beamDeform":1200,"beamStrength":4500},
+          {"beamLimitSpring":7501000,"beamLimitDamp":250},
+          ["rdiff","tra1", {"name":"driveshaft","optional":true,"breakGroup":"driveshaft","deformGroup":"driveshaft"}],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+}

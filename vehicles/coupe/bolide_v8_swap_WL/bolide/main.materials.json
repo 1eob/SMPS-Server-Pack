@@ -1,0 +1,809 @@
+{
+  "bolide_badges": {
+    "name": "bolide_badges",
+    "mapTo": "bolide_badges",
+    "class": "material",
+    "persistentId": "11b425ce-d4b4-459b-afa4-549825eca43e",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/bolide/bolide_badges_ao.data.png",
+        "baseColorFactor": [
+          0.850000024,
+          0.850000024,
+          0.850000024,
+          1
+        ],
+        "metallicFactor": 1,
+        "normalMap": "vehicles/bolide/bolide_badges_nm.normal.png",
+        "opacityMap": "/vehicles/bolide/bolide_badges_o.data.png",
+        "roughnessMap": "/vehicles/bolide/bolide_badges_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 84,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucentBlendOp": "None",
+    "translucentZWrite": true,
+    "version": 1.5
+  },
+  "bolide_baremetal": {
+    "name": "bolide_baremetal",
+    "mapTo": "bolide_baremetal",
+    "class": "Material",
+    "persistentId": "be8bf3b0-0cde-429c-bfe1-c1f00bc89cd1",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.318827987,
+          0.318825006,
+          0.318825006,
+          1
+        ],
+        "metallicFactor": 1,
+        "roughnessFactor": 0.5
+      },
+      {},
+      {},
+      {}
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "bolide_brakelight": {
+    "name": "bolide_brakelight",
+    "mapTo": "bolide_brakelight",
+    "class": "Material",
+    "persistentId": "",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  "bolide_chmsl": {
+    "name": "bolide_chmsl",
+    "mapTo": "bolide_chmsl",
+    "class": "Material",
+    "persistentId": "",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  "bolide_engine": {
+    "name": "bolide_engine",
+    "mapTo": "bolide_engine",
+    "class": "Material",
+    "persistentId": "b0da7db1-906d-49bf-a1c8-66893f244bb9",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/bolide/bolide_engine_ao.data.png",
+        "baseColorMap": "/vehicles/coupe/bolide_v8_swap_WL/texture/bolide_engine_b.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/bolide/bolide_engine_m.data.png",
+        "normalMap": "vehicles/bolide/bolide_engine_nm.normal.png",
+        "roughnessMap": "/vehicles/bolide/bolide_engine_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "bolide_gauges": {
+    "name": "bolide_gauges",
+    "mapTo": "bolide_gauges",
+    "class": "Material",
+    "persistentId": "a0ea8a4b-71b8-4efd-9845-4be208f82a19",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/bolide/bolide_gauges_ao.data.png",
+        "baseColorMap": "/vehicles/bolide/bolide_gauges_b.color.png",
+        "metallicFactor": 0,
+        "normalMap": "/vehicles/bolide/bolide_gauges_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/vehicles/bolide/bolide_gauges_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "bolide_gauges_mph": {
+    "name": "bolide_gauges_mph",
+    "mapTo": "bolide_gauges_mph",
+    "class": "Material",
+    "persistentId": "721fdce0-f8cf-40aa-b6d9-2d754f33969f",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/bolide/bolide_gauges_ao.data.png",
+        "baseColorMap": "/vehicles/bolide/bolide_gauges_b_mph.color.png",
+        "metallicFactor": 1,
+        "normalMap": "/vehicles/bolide/bolide_gauges_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/vehicles/bolide/bolide_gauges_r_mph.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "bolide_gauges_mph_on": {
+    "name": "bolide_gauges_mph_on",
+    "mapTo": "bolide_gauges_mph_on",
+    "class": "Material",
+    "persistentId": "14c5b819-5f97-47d3-9f22-129e9d6ccaa2",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/bolide/bolide_gauges_ao.data.png",
+        "baseColorFactor": [
+          0.693965971,
+          0.693958998,
+          0.693958998,
+          1
+        ],
+        "baseColorMap": "/vehicles/bolide/bolide_gauges_b_mph.color.png",
+        "emissiveFactor": [
+          1,
+          0.999989986,
+          0.999989986
+        ],
+        "emissiveMap": "/vehicles/bolide/bolide_gauges_glow_mph.color.png",
+        "metallicFactor": 1,
+        "normalMap": "/vehicles/bolide/bolide_gauges_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/vehicles/bolide/bolide_gauges_r_mph.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "bolide_gauges_on": {
+    "name": "bolide_gauges_on",
+    "mapTo": "bolide_gauges_on",
+    "class": "Material",
+    "persistentId": "30ee40f4-ef30-4c82-afb6-4e5a8e83f8dd",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/bolide/bolide_gauges_ao.data.png",
+        "baseColorFactor": [
+          0.49652499,
+          0.496520013,
+          0.496520013,
+          1
+        ],
+        "baseColorMap": "/vehicles/bolide/bolide_gauges_b.color.png",
+        "emissiveFactor": [
+          1,
+          0.999989986,
+          0.999989986
+        ],
+        "emissiveMap": "/vehicles/bolide/bolide_gauges_glow.color.png",
+        "metallicFactor": 0,
+        "normalMap": "/vehicles/bolide/bolide_gauges_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/vehicles/bolide/bolide_gauges_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "bolide_glass": {
+    "name": "bolide_glass",
+    "mapTo": "bolide_glass",
+    "class": "Material",
+    "persistentId": "1b05f60c-ad49-49de-bc60-90bd982bff43",
+    "Stages": [
+      {
+        "baseColorMap": "vehicles/bolide/bolide_glass_b.color.png",
+        "normalMap": "/vehicles/common/null_n.dds",
+        "opacityMap": "/vehicles/bolide/bolide_glass_o.data.png",
+        "pixelSpecular": true,
+        "roughnessFactor": 0,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "castShadows": false,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 1852795252,
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "translucentRecvShadows": true,
+    "version": 1.5
+  },
+  "bolide_glass_dmg": {
+    "name": "bolide_glass_dmg",
+    "mapTo": "bolide_glass_dmg",
+    "class": "Material",
+    "persistentId": "717dfd5a-354d-468e-836d-927bca0fa528",
+    "Stages": [
+      {
+        "baseColorMap": "vehicles/bolide/bolide_glass_dmg_b.color.png",
+        "normalMap": "vehicles/bolide/bolide_glass_dmg_nm.normal.png",
+        "opacityMap": "/vehicles/bolide/bolide_glass_dmg_o.data.png",
+        "pixelSpecular": true,
+        "roughnessFactor": 0,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 20,
+    "alphaTest": true,
+    "castShadows": false,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 1852795252,
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "translucentRecvShadows": true,
+    "version": 1.5
+  },
+  "bolide_glass_int": {
+    "name": "bolide_glass_int",
+    "mapTo": "bolide_glass_int",
+    "class": "Material",
+    "persistentId": "1b05f60c-ad49-49de-bc60-90bd982bff43",
+    "Stages": [
+      {
+        "baseColorMap": "vehicles/bolide/bolide_glass_b.color.png",
+        "normalMap": "/vehicles/common/null_n.dds",
+        "opacityMap": "/vehicles/bolide/bolide_glass_o.data.png",
+        "pixelSpecular": true,
+        "roughnessFactor": 1,
+        "roughnessFactor": 1,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "castShadows": false,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 1852795252,
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "translucentRecvShadows": true,
+    "version": 1.5
+  },
+  "bolide_headlight": {
+    "name": "bolide_headlight",
+    "mapTo": "bolide_headlight",
+    "class": "Material",
+    "persistentId": "",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  "bolide_intcarpet": {
+    "name": "bolide_intcarpet",
+    "mapTo": "bolide_intcarpet",
+    "class": "material",
+    "persistentId": "d4883fc5-4f03-4970-8f1a-fff627a7edc5",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/bolide/bolide_intcarpet_ao.data.png",
+        "baseColorFactor": [
+          0.25,
+          0.25,
+          0.25,
+          1
+        ],
+        "baseColorMap": "/vehicles/bolide/bolide_intcarpet_b.color.png",
+        "normalMap": "vehicles/bolide/bolide_intcarpet_nm.normal.png",
+        "roughnessMap": "/vehicles/bolide/bolide_intcarpet_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "bolide_interior": {
+    "name": "bolide_interior",
+    "mapTo": "bolide_interior",
+    "class": "Material",
+    "persistentId": "3fe3d553-a2de-4e29-8d18-3351b5bce90e",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/bolide/bolide_interior_ao.data.png",
+        "baseColorMap": "/vehicles/bolide/bolide_interior_b.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/bolide/bolide_interior_m.data.png",
+        "normalMap": "vehicles/bolide/bolide_interior_nm.normal.png",
+        "roughnessMap": "/vehicles/bolide/bolide_interior_r.data.png",
+        "useAnisotropic": true
+      },
+      {
+        "ambientOcclusionMap": "/vehicles/bolide/bolide_interior_ao.data.png",
+        "baseColorFactor": [
+          0.25,
+          0.25,
+          0.25,
+          1
+        ],
+        "baseColorMap": "/vehicles/bolide/bolide_interior_b.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/bolide/bolide_interior_m.data.png",
+        "normalMap": "vehicles/bolide/bolide_interior_nm.normal.png",
+        "opacityMap": "/vehicles/bolide/bolide_interior_c.data.png",
+        "roughnessMap": "/vehicles/bolide/bolide_interior_r.data.png",
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "activeLayers": 2,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 0,
+    "version": 1.5
+  },
+  "bolide_interior_race": {
+    "name": "bolide_interior_race",
+    "mapTo": "bolide_interior_race",
+    "class": "Material",
+    "persistentId": "3fe3d553-a2de-4e29-8d18-3351b5bce90e",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/bolide/bolide_interior_race_ao.data.png",
+        "baseColorMap": "/vehicles/bolide/bolide_interior_race_b.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/bolide/bolide_interior_race_m.data.png",
+        "normalMap": "vehicles/bolide/bolide_interior_race_nm.normal.png",
+        "roughnessMap": "/vehicles/bolide/bolide_interior_race_r.data.png",
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "activeLayers": 1,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 0,
+    "version": 1.5
+  },
+  "bolide_lights": {
+    "name": "bolide_lights",
+    "mapTo": "bolide_lights",
+    "class": "Material",
+    "persistentId": "3fe3d553-a2de-4e29-8d18-3351b5bce90e",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/bolide/bolide_lights_ao.data.png",
+        "baseColorMap": "/vehicles/bolide/bolide_lights_b.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/bolide/bolide_lights_m.data.png",
+        "normalMap": "vehicles/bolide/bolide_lights_nm.normal.png",
+        "roughnessMap": "/vehicles/bolide/bolide_lights_r.data.png",
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "activeLayers": 1,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 0,
+    "version": 1.5
+  },
+  "bolide_lights_dmg": {
+    "name": "bolide_lights_dmg",
+    "mapTo": "bolide_lights_dmg",
+    "class": "Material",
+    "persistentId": "be16b91f-ed14-42e6-9f14-537711f66711",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/bolide/bolide_lights_dmg_ao.data.png",
+        "baseColorMap": "/vehicles/bolide/bolide_lights_dmg_b.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/bolide/bolide_lights_dmg_m.data.png",
+        "normalMap": "vehicles/bolide/bolide_lights_dmg_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessFactor": 0,
+        "roughnessMap": "/vehicles/bolide/bolide_lights_dmg_r.data.png",
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 0,
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "bolide_lights_on": {
+    "name": "bolide_lights_on",
+    "mapTo": "bolide_lights_on",
+    "class": "Material",
+    "persistentId": "3fe3d553-a2de-4e29-8d18-3351b5bce90e",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/bolide/bolide_lights_ao.data.png",
+        "baseColorMap": "/vehicles/bolide/bolide_lights_b.color.png",
+        "emissiveFactor": [
+          30,
+          30,
+          30
+        ],
+        "emissiveMap": "/vehicles/bolide/bolide_lights_g.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/bolide/bolide_lights_m.data.png",
+        "normalMap": "vehicles/bolide/bolide_lights_nm.normal.png",
+        "roughnessMap": "/vehicles/bolide/bolide_lights_r.data.png",
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "activeLayers": 1,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 0,
+    "version": 1.5
+  },
+  "bolide_lights_on_intense": {
+    "name": "bolide_lights_on_intense",
+    "mapTo": "bolide_lights_on_intense",
+    "class": "Material",
+    "persistentId": "3fe3d553-a2de-4e29-8d18-3351b5bce90e",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/bolide/bolide_lights_ao.data.png",
+        "baseColorMap": "/vehicles/bolide/bolide_lights_b.color.png",
+        "emissiveFactor": [
+          110,
+          110,
+          110
+        ],
+        "emissiveMap": "/vehicles/bolide/bolide_lights_g.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/bolide/bolide_lights_m.data.png",
+        "normalMap": "vehicles/bolide/bolide_lights_nm.normal.png",
+        "roughnessMap": "/vehicles/bolide/bolide_lights_r.data.png",
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "activeLayers": 1,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 0,
+    "version": 1.5
+  },
+  "bolide_main": {
+    "name": "bolide_main",
+    "mapTo": "bolide_main",
+    "class": "Material",
+    "persistentId": "3fe3d553-a2de-4e29-8d18-3351b5bce90e",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/bolide/bolide_main_ao.data.png",
+        "baseColorMap": "/vehicles/bolide/bolide_main_b.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/bolide/bolide_main_m.data.png",
+        "normalMap": "vehicles/bolide/bolide_main_nm.normal.png",
+        "roughnessMap": "/vehicles/bolide/bolide_main_r.data.png",
+        "useAnisotropic": true
+      },
+      {
+        "ambientOcclusionMap": "/vehicles/bolide/bolide_main_ao.data.png",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/bolide/bolide_main_c.data.png",
+        "clearCoatRoughnessFactor": 1,
+        "colorPaletteMap": "/vehicles/common/nullcolormaskR.dds",
+        "colorPaletteMapUseUV": 1,
+        "instanceDiffuse": true,
+        "metallicFactor": 1,
+        "normalMap": "/vehicles/bolide/bolide_main_nm.normal.png",
+        "opacityMap": "/vehicles/bolide/bolide_main_c.data.png",
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "activeLayers": 2,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 0,
+    "version": 1.5
+  },
+  "bolide_mechanical": {
+    "name": "bolide_mechanical",
+    "mapTo": "bolide_mechanical",
+    "class": "Material",
+    "persistentId": "ccf2febb-57f0-418e-824d-ae74550d39ec",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/bolide/bolide_mechanical_ao.data.png",
+        "baseColorMap": "/vehicles/bolide/bolide_mechanical_b.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/bolide/bolide_mechanical_m.data.png",
+        "normalMap": "vehicles/bolide/bolide_mechanical_nm.normal.png",
+        "roughnessMap": "/vehicles/bolide/bolide_mechanical_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "invertBackFaceNormals": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "bolide_parkinglight": {
+    "name": "bolide_parkinglight",
+    "mapTo": "bolide_parkinglight",
+    "class": "Material",
+    "persistentId": "",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  "bolide_plastic": {
+    "name": "bolide_plastic",
+    "mapTo": "bolide_plastic",
+    "class": "Material",
+    "persistentId": "855f1907-c3fa-4c55-9b67-be4a8762acaf",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.05,
+          0.05,
+          0.05,
+          1
+        ],
+        "roughnessFactor": 0.5
+      },
+      {},
+      {},
+      {}
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "bolide_rallylight": {
+    "name": "bolide_rallylight",
+    "mapTo": "bolide_rallylight",
+    "class": "Material",
+    "persistentId": "",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  "bolide_reverselight": {
+    "name": "bolide_reverselight",
+    "mapTo": "bolide_reverselight",
+    "class": "Material",
+    "persistentId": "",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  "bolide_rollcage": {
+    "name": "bolide_rollcage",
+    "mapTo": "bolide_rollcage",
+    "class": "Material",
+    "persistentId": "6bd6e0ab-eb9b-40c5-a7df-a4359d4100bf",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/bolide/bolide_rollcage_b.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/bolide/bolide_rollcage_m.data.png",
+        "normalMap": "vehicles/bolide/bolide_rollcage_nm.normal.png",
+        "roughnessMap": "/vehicles/bolide/bolide_rollcage_r.data.png"
+      },
+      {
+        "clearCoatFactor": 1,
+        "colorPaletteMap": "/vehicles/common/nullcolormask.dds",
+        "metallicFactor": 1,
+        "normalMap": "/vehicles/bolide/bolide_rollcage_nm.normal.png",
+        "opacityMap": "/vehicles/bolide/bolide_rollcage_c.data.png"
+      },
+      {},
+      {}
+    ],
+    "activeLayers": 2,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "bolide_signal_FL": {
+    "name": "bolide_signal_FL",
+    "mapTo": "bolide_signal_FL",
+    "class": "Material",
+    "persistentId": "",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  "bolide_signal_FR": {
+    "name": "bolide_signal_FR",
+    "mapTo": "bolide_signal_FR",
+    "class": "Material",
+    "persistentId": "",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  "bolide_signal_L": {
+    "name": "bolide_signal_L",
+    "mapTo": "bolide_signal_L",
+    "class": "Material",
+    "persistentId": "",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  "bolide_signal_R": {
+    "name": "bolide_signal_R",
+    "mapTo": "bolide_signal_R",
+    "class": "Material",
+    "persistentId": "",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  "bolide_signal_RL": {
+    "name": "bolide_signal_RL",
+    "mapTo": "bolide_signal_RL",
+    "class": "Material",
+    "persistentId": "",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  "bolide_signal_RR": {
+    "name": "bolide_signal_RR",
+    "mapTo": "bolide_signal_RR",
+    "class": "Material",
+    "persistentId": "",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  "bolide_sunstrip": {
+    "name": "bolide_sunstrip",
+    "mapTo": "bolide_sunstrip",
+    "class": "Material",
+    "persistentId": "a191c7be-c14c-42f6-b624-aef9abeb3cfd",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/bolide/bolide_sunstrip_b.color.png",
+        "roughnessFactor": 0.272000015
+      },
+      {},
+      {},
+      {}
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "bolide_windshield_dmg": {
+    "name": "bolide_windshield_dmg",
+    "mapTo": "bolide_windshield_dmg",
+    "class": "Material",
+    "persistentId": "60e3bfa1-48f9-4b3e-b9e6-55ee5878f415",
+    "Stages": [
+      {
+        "baseColorMap": "vehicles/bolide/bolide_glass_dmg_b.color.png",
+        "normalMap": "vehicles/common/windshield_dmg_n.dds",
+        "opacityMap": "/vehicles/bolide/bolide_glass_dmg_o.data.png",
+        "pixelSpecular": true,
+        "roughnessFactor": 0,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "castShadows": false,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 1852795252,
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}

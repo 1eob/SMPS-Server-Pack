@@ -1,0 +1,46 @@
+{
+"wendover_transfer_case_RWD_1eo": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"RWD Output Shaft 1eo",
+        "value":90,
+    },
+    "slotType" : "wendover_transfer_case",
+    "powertrain" : [
+        ["type", "name", "inputName", "inputIndex"],
+        ["shaft", "transfercase", "gearbox", 1, {"deformGroups":["gearbox"], "friction":0.4, "dynamicFriction":0.0005, "torqueLossCoef": 0.012, "friction":0.4, "dynamicFriction":0.0005, "torqueLossCoef": 0.012, "uiName":"Rear Output Shaft"}],
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["we", ["wendover_engine","wendover_transmission"]],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"selfCollision":false},
+         {"collision":true},
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         ["tra2", 0.0, -1.26, 0.325, {"nodeWeight":9, "group":""}],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //differential node
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":2501000,"beamDamp":150},
+          {"beamDeform":35000,"beamStrength":"FLT_MAX"},
+          {"deformLimitExpansion":1.2},
+          {"deformGroup":"transfercase", "deformationTriggerRatio":0.001},
+          ["tra2", "tra1l"],
+          ["tra2", "tra1r"],
+          ["tra2", "e1r"],
+          ["tra2", "e2r"],
+          ["tra2", "e3l"],
+          ["tra2", "e4l"],
+          ["tra2", "e1l"],
+          ["tra2", "e2l"],
+          ["tra2", "e3r"],
+          ["tra2", "e4r"],
+          {"deformGroup":""},
+    ],
+}
+}
